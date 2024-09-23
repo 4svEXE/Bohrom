@@ -1,0 +1,18 @@
+@import '../../../../scss/variables.scss';
+
+.About {
+    padding: 69px 85px;
+    border-radius: 45px;
+    background: #1C1B1B;
+    border-radius: 45px;
+    margin: 120px 0;
+
+    p {
+        font-family: Nunito Sans;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        color: #7F7F7F;
+    }
+}
