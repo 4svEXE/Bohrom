@@ -11,39 +11,34 @@ const About: React.FC = () => {
   };
 
   return (
-    <section className="About">
-      <h2>{t("about.title")}</h2>
-      <div className="grid-wrapper">
-        {[
-          {
-            title: t("about.items.0.title"),
-            text: t("about.items.0.text"),
-          },
-          {
-            text: t("about.items.1.text"),
-          },
-          {
-            text: t("about.items.2.text"),
-          },
-          {
-            text: t("about.items.3.text"),
-          },
-          {
-            text: t("about.items.4.text"),
-          },
-          {
-            text: t("about.items.5.text"),
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className={`grid-item ${activeIndex === index ? "active" : ""}`}
-            onMouseEnter={() => handleMouseEnter(index)}
-          >
-            {item.title && <h4>{item.title}</h4>}
-            <p className="description">{item.text}</p>
-          </div>
-        ))}
+    <section>
+      <div className="About grid grid-cols-2 gap-20">
+        <div className="col-span-1">
+          <img
+            src="/Bohrom/assets/img/about/collage.png"
+            alt="boxes for moving"
+          />
+        </div>
+        <div className="col-span-1 flex flex-col justify-center">
+          <p>
+            <strong>BOHROM</strong> — це команда професіоналів, які допоможуть
+            вам здійснити будь-який переїзд швидко, безпечно і за доступною
+            ціною.
+          </p><br/>
+
+          <p>
+            Ми займаємося квартирними, офісними переїздами та
+            вантажоперевезеннями, використовуючи сучасне обладнання та надійний
+            транспорт.
+          </p><br/>
+
+          <p>
+            Працюємо по Ліберецькому краю та по всій Чехії. Наша вантажівка
+            Iveco Daily (3,5 т) дозволяє нам працювати з будь-якими видами
+            вантажів, забезпечуючи збереження ваших речей під час
+            транспортування.
+          </p>
+        </div>
       </div>
     </section>
   );

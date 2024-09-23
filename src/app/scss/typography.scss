@@ -1,31 +1,43 @@
 @import "variables";
 
 * {
-    // font-family: "JetBrains Mono", monospace;
     font-family: "Jura", sans-serif;
     position: relative;
     z-index: 1;
 }
 
 h1 {
+    font-family: Nunito Sans;
+    font-size: 72px;
     font-weight: 700;
-    font-size: 30px;
-    line-height: normal;
+    line-height: 72px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 h2 {
+    font-family: Nunito Sans;
+    font-size: 48px;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 52px;
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 20px;
+    line-height: 57.6px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #1C1B1B;
+
 
     @media (max-width: $media-netbook) {
         font-size: 30px;
+    }
+
+    span {
+        font-family: Nunito Sans;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57.6px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #FF6A00;
     }
 }
 
@@ -33,6 +45,24 @@ h6 {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.1;
+}
+
+p {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    strong {
+        font-family: Nunito Sans;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        color: #FF6A00;
+    }
 }
 
 .error-message {

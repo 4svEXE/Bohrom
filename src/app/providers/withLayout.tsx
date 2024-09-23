@@ -18,11 +18,11 @@ const sections = [
 
 export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
   return (
-    <div className="bg-white flex flex-col items-center min-h-[100vh] overflow-hidden">
+    <div className="bg-white flex flex-col items-center w-full min-h-[100vh] overflow-hidden">
       <Header toggleTheme={toggleTheme} />
       <PagesNav sections={sections} />
 
-      <div className="flex flex-col">{children}</div>
+      <div className="flex flex-col w-full">{children}</div>
     </div>
   );
 }
