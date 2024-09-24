@@ -5,12 +5,13 @@ import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import Loader from "../../../../../../components/shared/loader";
 import { toast, Toaster } from "react-hot-toast";
+import Button from "../../../../../../components/shared/button";
+import "./index.scss";
 
 interface FormValues {
   name: string;
   email: string;
   phone: string;
-  photoshootType: string;
   message: string;
 }
 
@@ -32,8 +33,7 @@ const ContactForm: React.FC = () => {
     email: Yup.string()
       .email(t("errors.invalidEmail"))
       .required(t("errors.required")),
-    phone: Yup.string(),
-    photoshootType: Yup.string().required(t("errors.required")),
+    phone: Yup.string().required(t("errors.required")),
     message: Yup.string(),
   });
 
@@ -82,10 +82,9 @@ const ContactForm: React.FC = () => {
         TEMPLATE_ID,
         {
           from_name: values.name,
-          to_name: "Maryna Holovan",
+          to_name: "BOHROM",
           message: values.message,
           phone: values.phone,
-          photoshootType: values.photoshootType,
           email: values.email,
         },
         USER_ID
@@ -106,21 +105,25 @@ const ContactForm: React.FC = () => {
         name: "",
         email: "",
         phone: "",
-        photoshootType: "",
         message: "",
       }}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
       {(formik) => (
-        <form className="contact-form" onSubmit={formik.handleSubmit}>
+        <form className="contact-form gap-10" onSubmit={formik.handleSubmit}>
+          <Toaster position="center" reverseOrder={false} />
 
-            <Toaster position="top-right" reverseOrder={false} />
-
+          <h3 className="mb-8">Залишити заявку</h3>
 
           <div className="flex flex-col">
             <label htmlFor="name">{t("contactForm.nameLabel")}</label>
-            <Field type="text" id="name" name="name" />
+            <Field
+              type="text"
+              id="name"
+              name="name"
+              placeholder={t("contactForm.namePlaceholder")}
+            />
             <ErrorMessage
               name="name"
               component="div"
@@ -129,7 +132,12 @@ const ContactForm: React.FC = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="email">{t("contactForm.emailLabel")}</label>
-            <Field type="email" id="email" name="email" />
+            <Field
+              type="email"
+              id="email"
+              name="email"
+              placeholder={t("contactForm.emailPlaceholder")}
+            />
             <ErrorMessage
               name="email"
               component="div"
@@ -138,7 +146,12 @@ const ContactForm: React.FC = () => {
           </div>
           <div className="flex flex-col">
             <label htmlFor="phone">{t("contactForm.phoneLabel")}</label>
-            <Field type="text" id="phone" name="phone" />
+            <Field
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder={t("contactForm.phonePlaceholder")}
+            />
             <ErrorMessage
               name="phone"
               component="div"
@@ -146,48 +159,33 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="photoshoot-type">
-              {t("contactForm.photoshootTypeLabel")}
-            </label>
-            <Field as="select" id="photoshoot-type" name="photoshootType">
-              <option value="" disabled>
-                {t("contactForm.notSpecified")}
-              </option>
-              <option value="Express">Express</option>
-              <option value="Standard">Standard</option>
-              <option value="Premium">Premium</option>
-            </Field>
-            <ErrorMessage
-              name="photoshootType"
-              component="div"
-              className="error-message"
-            />
-          </div>
-          <div className="flex flex-col">
             <label htmlFor="message">{t("contactForm.messageLabel")}</label>
-            <Field as="textarea" id="message" name="message" rows={4} />
+            <Field
+              as="textarea"
+              id="message"
+              name="message"
+              rows={4}
+              placeholder={t("contactForm.messagePlaceholder")}
+            />
             <ErrorMessage
               name="message"
               component="div"
               className="error-message"
             />
           </div>
-          <button
-            className="custom-button flex justify-center items-center gap-3"
+
+          <p className="info mt-2">{t("contactForm.infoText")} <a href="">{t("contactForm.confid")}</a></p>
+
+
+          <Button
+            text={t("contactForm.submitButton")}
+            className="mt-8 w-full flex justify-center"
             type="submit"
             disabled={formik.isSubmitting}
-          >
-            {t("contactForm.submitButton")}
+            isLoading={formik.isSubmitting}
+            onClick={() => formik.handleSubmit()}
+          />
 
-            {formik.isSubmitting && (
-              <div className="loading">
-                <div className="hidden">{t("contactForm.loadingMessage")}</div>
-                <Loader />
-              </div>
-            )}
-          </button>
-
-          <p className="info mt-2">{t("contactForm.infoText")}</p>
         </form>
       )}
     </Formik>

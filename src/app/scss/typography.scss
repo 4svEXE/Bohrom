@@ -26,19 +26,30 @@ h2 {
     color: #1C1B1B;
 
 
-    @media (max-width: $media-netbook) {
-        font-size: 30px;
+    @media (max-width: $media-tablet) {
+        display: inline;
+        text-align: center;
+        font-size: 38px;
     }
 
     span {
         font-family: Nunito Sans;
-        font-size: 48px;
+        // font-size: 48px;
         font-weight: 700;
         line-height: 57.6px;
         letter-spacing: -0.01em;
         text-align: left;
         color: #FF6A00;
     }
+}
+
+h3 {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 h6 {

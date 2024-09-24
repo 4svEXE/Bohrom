@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
-const About: React.FC = () => {
+const Tariffs: React.FC = () => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -12,36 +12,59 @@ const About: React.FC = () => {
 
   return (
     <section>
-      <div className="About grid grid-cols-2 gap-20">
-        <div className="col-span-1">
-          <img
-            src="/Bohrom/assets/img/about/collage.png"
-            alt="boxes for moving"
-          />
+      <div className="Tariffs flex flex-col items-center gap-20">
+        <div className="flex flex-col items-center gap-3">
+          <h2>Тарифи</h2>
+          <p>Розміри будки — висота 2,3м, ширина 2,1м, довжина 4,2м</p>
+          <p>Вантажопідйомність 3,5т</p>
         </div>
-        <div className="col-span-1 flex flex-col justify-center">
-          <p>
-            <strong>BOHROM</strong> — це команда професіоналів, які допоможуть
-            вам здійснити будь-який переїзд швидко, безпечно і за доступною
-            ціною.
-          </p><br/>
 
-          <p>
-            Ми займаємося квартирними, офісними переїздами та
-            вантажоперевезеннями, використовуючи сучасне обладнання та надійний
-            транспорт.
-          </p><br/>
-
-          <p>
-            Працюємо по Ліберецькому краю та по всій Чехії. Наша вантажівка
-            Iveco Daily (3,5 т) дозволяє нам працювати з будь-якими видами
-            вантажів, забезпечуючи збереження ваших речей під час
-            транспортування.
-          </p>
+        <div className="items-container">
+          <div className="tariff-item">
+            <img src="/Bohrom/assets/img/tariffs/1.svg" alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p>Транспортний автомобіль</p>
+              <strong>700 Kč/год </strong>
+            </div>
+          </div>
+          <div className="tariff-item">
+            <img src="/Bohrom/assets/img/tariffs/2.svg" alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="flex flex-col items-center">
+                <p>Транспортний автомобіль</p>+<p>1 вантажник</p>
+              </div>
+              <strong>700 Kč/год </strong>
+            </div>
+          </div>
+          <div className="tariff-item">
+            <img src="/Bohrom/assets/img/tariffs/3.svg" alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="flex flex-col items-center">
+                <p>Транспортний автомобіль</p>+<p>2 вантажники</p>
+              </div>
+              <strong>700 Kč/год </strong>
+            </div>
+          </div>
+          <div className="tariff-item">
+            <img src="/Bohrom/assets/img/tariffs/4.svg" alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="flex flex-col items-center">
+                <p>Транспортний автомобіль</p>+<p>3 вантажники</p>
+              </div>
+              <strong>700 Kč/год </strong>
+            </div>
+          </div>
+          <div className="tariff-item">
+            <img src="/Bohrom/assets/img/tariffs/5.svg" alt="" />
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <p>Транспортний автомобіль</p>
+              <strong>700 Kč/год </strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default Tariffs;
