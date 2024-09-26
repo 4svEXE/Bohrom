@@ -1,59 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
 const WhyUs: React.FC = () => {
   const { t } = useTranslation();
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const handleMouseEnter = (index: number) => {
-    setActiveIndex(index);
-  };
 
   return (
     <section>
       <div className="WhyUs flex flex-col gap-20">
         <h2>
-          <span>Чому</span> обирають нас
+          <span>{t("whyUs.titlePart1")}</span> {t("whyUs.titlePart2")}
         </h2>
 
         <div className="grid grid-cols-3">
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/1.svg" alt="" />
+              <img src="/Bohrom/assets/img/why-us/1.svg" alt={t("whyUs.alt1")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <h6>Квартирні та офісні переїзди</h6>
-              <p>
-                Професійний переїзд вашого дому чи офісу з увагою до деталей і
-                безпеки.
-              </p>
+              <h6>{t("whyUs.reason1.title")}</h6>
+              <p>{t("whyUs.reason1.description")}</p>
             </div>
           </div>
 
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/2.svg" alt="" />
+              <img src="/Bohrom/assets/img/why-us/2.svg" alt={t("whyUs.alt2")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <h6>Конкурентноспроможні ціни</h6>
-              <p>Доступні тарифи та якість обслуговування.</p>
+              <h6>{t("whyUs.reason2.title")}</h6>
+              <p>{t("whyUs.reason2.description")}</p>
             </div>
           </div>
 
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/3.svg" alt="" />
+              <img src="/Bohrom/assets/img/why-us/3.svg" alt={t("whyUs.alt3")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <h6>Відмінне обслуговування клієнтів</h6>
-              <p>
-                Наша команда завжди готова допомогти вам у будь-який час,
-                вирішуючи будь-які питання або проблеми.
-              </p>
+              <h6>{t("whyUs.reason3.title")}</h6>
+              <p>{t("whyUs.reason3.description")}</p>
             </div>
           </div>
         </div>

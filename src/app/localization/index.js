@@ -3,33 +3,29 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
-import ua from "./locales/ua.json";
+import cz from "./locales/cz.json";
 
-const defaultFallback = "ua";
+const defaultFallback = "cz";
 const defaultTranslationNamespace = "translation";
 
 i18next
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     defaultNS: defaultTranslationNamespace,
     fallbackLng: defaultFallback,
     resources: {
       en: {
         translation: en,
       },
-      ua: {
-        translation: ua,
+      cz: {
+        translation: cz,
       },
     },
     react: {
       useSuspense: true,
-    }
+    },
   });
-
-i18next.on("languageChanged", (lng) => {
-  console.log(`Language changed to: ${lng}`);
-});
 
 export default i18next;

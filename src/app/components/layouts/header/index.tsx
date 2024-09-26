@@ -7,78 +7,79 @@ interface SidebarProps {
   toggleTheme: () => void;
 }
 
-const Header: React.FC<SidebarProps> = ({ toggleTheme }) => {
+const Header: React.FC<SidebarProps> = () => {
   const { t } = useTranslation();
-
   const [activeNav, setActiveNav] = useState<boolean>(false);
-
   const language = window.localStorage.getItem("i18nextLng") ?? "en";
-
   const [isShowMenu, setShowMenu] = useState<boolean>(false);
 
   const toggleNav = () => {
+    setShowMenu((prev) => !prev);
     setActiveNav((prev) => !prev);
   };
 
   const availableLanguages = [
     { code: "en", name: "EN" },
-    { code: "uk", name: "UA" },
+    { code: "cz", name: "CZ" },
   ];
 
   return (
     <div className="container header-container">
       <header className={`Header ${activeNav ? "active" : ""}`}>
-        {isShowMenu && (
-          <div id="menuToggle" className="block lg:hidden">
-            <input
-              id="checkbox"
-              type="checkbox"
-              onChange={toggleNav}
-              checked={activeNav}
-            />
-            <label className="toggle" htmlFor="checkbox">
-              <div className="bar bar--top"></div>
-              <div className="bar bar--middle"></div>
-              <div className="bar bar--bottom"></div>
-            </label>
-          </div>
-        )}
+        <img src="/Bohrom/assets/logo-white.svg" alt="Logo" className="logo" />
 
-        <img src="/Bohrom/assets/logo-white.svg" alt="Logo" />
+        <nav className={`navigation ${isShowMenu ? "show-menu" : ""}`}>
+          <ul onClick={toggleNav}>
+            <li>
+              <a href={t("nav.links.about")}>{t("footer.aboutUs")}</a>
+            </li>
+            <li>
+              <a href={t("nav.links.services")}>{t("footer.services")}</a>
+            </li>
+            <li>
+              <a href={t("nav.links.tarifs")}>{t("footer.tarifs")}</a>
+            </li>
+            <li>
+              <a href={t("nav.links.contacts")}>{t("footer.contacts")}</a>
+            </li>
+            <li className="md:mt-0 mt-10 block md:hidden">
+              <LanguageSwitcher
+                currentLanguage={language}
+                availableLanguages={availableLanguages}
+              />
+            </li>
+          </ul>
+        </nav>
 
         <div className="flex items-center gap-12">
-          <nav>
-            <ul className="navigation">
-              <li>
-                <a href="">Про нас</a>
-              </li>
-              <li>
-                <a href="">Послуги</a>
-              </li>
-              <li>
-                <a href="">Ціни</a>
-              </li>
-              <li>
-                <a href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div className="flex flex-col gap-6">
+          <li className="md:mt-0 mt-10 md:block hidden">
             <LanguageSwitcher
               currentLanguage={language}
               availableLanguages={availableLanguages}
             />
-          </div>
-
-          <ul>
+          </li>
+          <ul className="phone">
             <li>
               <a type="tel" href={`tel:${t("var.tel")}`}>
-              <img src="/Bohrom/assets/icons/phone-outgoing.svg" alt="call" />
-              {t("var.tel")}
+                <img src="/Bohrom/assets/icons/phone-outgoing.svg" alt="call" />
+                {t("var.tel")}
               </a>
             </li>
           </ul>
+        </div>
+
+        <div className="burger-container">
+          <label className="burger" htmlFor="burger">
+            <input
+              type="checkbox"
+              id="burger"
+              onChange={toggleNav}
+              checked={activeNav}
+            />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
       </header>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../../../components/shared/button";
 import "./index.scss";
@@ -7,21 +7,24 @@ const FirstScreen: React.FC = () => {
   const { t } = useTranslation();
 
   const handleClick = () => {
-    alert("Button clicked!");
+    const contactsSection = document.getElementById("contacts");
+    if (contactsSection) {
+      contactsSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <section className="FirstScreen">
+    <section className="FirstScreen p-2 md:p-0">
       <div className="container m-auto">
-        <div className="flex flex-col w-[50%]">
-          <h1>Професійні перевезення для вашого комфорту</h1>
-          <p>Безпечні перевезення меблів та вантажів по всій Чехії</p>
+        <div className="flex flex-col w-[50%] gap-4">
+          <h1>{t("hiro.h1")}</h1>
+          <p>{t("hiro.p")}</p>
         </div>
 
         <Button
           onClick={handleClick}
-          text="Замовити доставку"
-          className="mt-8"
+          text={t("hiro.buttonText")}
+          className="mt-8 w-full md:w-auto"
         />
       </div>
     </section>

@@ -8,14 +8,6 @@ interface WithLayoutProps {
   toggleTheme: () => void;
 }
 
-const sections = [
-  'gallery',
-  'prices',
-  'about',
-  'faq',
-  'contacts',
-]
-
 export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-[100vh] overflow-hidden">

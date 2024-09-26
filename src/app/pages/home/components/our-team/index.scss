@@ -1,64 +1,42 @@
 @import '../../../../scss/variables.scss';
 
-.WhyUs {
+.OurTeam {
+    padding: 60px 0;
 
+    .swiper-container {
+        width: 100%;
 
-    .grid {
-        padding: 60px 0;
-        margin-bottom: 120px;
-        display: grid;
-        gap: 28px;
-        grid-template-columns: repeat(3, 1fr);
-
-        @media (max-width: $media-tablet) {
-            padding: 20px 0;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 60px;
-        }
-
-        .grid-item {
+        .slide {
             display: flex;
-            flex-direction: column;
-            height: max-content;
-
-            align-items: center;
             justify-content: center;
-            gap: 24px;
+            align-items: center;
 
-            @media (max-width: $media-tablet) {
-                width: 90%;
-                margin: auto;
+            img {
+                width: 350px;
+                height: 453px;
+                border-radius: 40px;
+                background: #EDEDED;
+                object-fit: cover;
             }
-
-            .img-container{
-                height: 170px;
-            }
-
-
-            h6 {
-                font-family: Nunito Sans;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 33.6px;
-                letter-spacing: -0.01em;
-                text-align: center;
-
-                color: #1C1B1B;
-            }
-
-            p {
-                font-family: Nunito Sans;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                text-align: center;
-
-                color: #7F7777;
-
-            }
-
-
         }
 
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .swiper-button-prev:after {
+            background-image: url("/Bohrom/assets/icons/mdi_arrow-left.svg");
+        }
+
+        .swiper-button-next:after {
+            background-image: url("/Bohrom/assets/icons/mdi_arrow-right.svg");
+        }
     }
 }
