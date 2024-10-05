@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../widgets/lang-switcher";
 import "./index.scss";
+import { updateStatistic } from "../../../helpers/statisticHelper";
 
 interface SidebarProps {
   toggleTheme: () => void;
@@ -24,7 +25,7 @@ const Header: React.FC<SidebarProps> = () => {
   ];
 
   return (
-    <div className="container header-container">
+    <div className="container header-container" onLoad={()=> updateStatistic("Phage loadet")}>
       <header className={`Header ${activeNav ? "active" : ""}`}>
         <img src="/Bohrom/assets/logo-white.svg" alt="Logo" className="logo" />
 
@@ -51,7 +52,7 @@ const Header: React.FC<SidebarProps> = () => {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-12 z-50">
           <li className="md:mt-0 mt-10 md:block hidden">
             <LanguageSwitcher
               currentLanguage={language}
@@ -60,7 +61,7 @@ const Header: React.FC<SidebarProps> = () => {
           </li>
           <ul className="phone">
             <li>
-              <a type="tel" href={`tel:${t("var.tel")}`}>
+              <a type="tel" href={`tel:${t("var.tel")}`} onClick={()=> updateStatistic("Phone clicked")}>
                 <img src="/Bohrom/assets/icons/phone-outgoing.svg" alt="call" />
                 {t("var.tel")}
               </a>

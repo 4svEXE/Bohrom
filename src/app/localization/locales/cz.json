@@ -31,14 +31,14 @@
   },
   "about": {
     "p1": " — je tým profesionálů, kteří vám pomohou uskutečnit jakýkoliv přesun rychle, bezpečně a za dostupnou cenu.",
-    "p2": "Působíme v Libereckém kraji a po celé České republice. Naše vozový park je vybaven moderními vozidly, která nám umožňují efektivně přepravovat různé typy nákladu a zajišťovat jejich bezpečnost během přepravy.",
+    "p2": "Působíme v Libereckém kraji a po celé České republice. Náš vozový park je vybaven moderními vozidly, která nám umožňují efektivně přepravovat různé typy nákladu a zajišťovat jejich bezpečnost během přepravy.",
     "p3": "Specializujeme se na stěhování domácností a kanceláří a přepravu nákladu, přičemž využíváme moderní vybavení a spolehlivou dopravu.",
-    "p4": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom splnili vaše potřeby v jakoukoliv vhodnou dobu."
+    "p4": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom splnili vaše potřeby kdykoliv."
   },
   "tariffs": {
     "title": "Tarify",
-    "p": "Jsme k dispozici 24/7, abychom splnili vaše potřeby v jakoukoliv vhodnou dobu.",
-    "vehicle": "Dopravní vozidlo",
+    "p": "Jsme k dispozici 24/7, abychom splnili vaše potřeby kdykoliv.",
+    "vehicle": "Dopravní vozidlo (dodávka)",
     "loader1": "1 nakladač",
     "loader2": "2 nakladače",
     "loader3": "3 nakladače",
@@ -117,7 +117,7 @@
     "phonePlaceholder": "+420 000 000 000",
     "messagePlaceholder": "Komentář (pokud je potřeba):",
     "submitButton": "Odeslat",
-    "infoText": "Kliknutím na tlačítko souhlasíte s zpracováním osobních údajů a souhlasíte s ",
+    "infoText": "Kliknutím na tlačítko souhlasíte se zpracováním osobních údajů a souhlasíte s ",
     "confid": "ochranou osobních údajů",
     "loadingMessage": "Odesílání zprávy...",
     "successMessage": "Zpráva byla úspěšně odeslána",

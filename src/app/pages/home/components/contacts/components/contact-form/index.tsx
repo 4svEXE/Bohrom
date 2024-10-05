@@ -5,6 +5,8 @@ import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { toast, Toaster } from "react-hot-toast";
 import Button from "../../../../../../components/shared/button";
+import { updateStatistic } from "../../../../../../helpers/statisticHelper";
+
 import "./index.scss";
 
 interface FormValues {
@@ -16,7 +18,7 @@ interface FormValues {
 
 const ContactForm: React.FC = () => {
   const { t } = useTranslation();
-  const [isSubmitted, setIsSubmitted] = useState(false); // Додаємо стан
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const SERVICE_ID =
     (import.meta.env.VITE_EMAILJS_SERVICE_ID as string) || "service_k3lakun";
@@ -73,6 +75,7 @@ const ContactForm: React.FC = () => {
     if (!canSendEmail()) {
       toast.error(t("contactForm.limitExceeded"));
       actions.setSubmitting(false);
+      updateStatistic("Error: contactForm.limitExceeded")
       return;
     }
 
@@ -89,12 +92,21 @@ const ContactForm: React.FC = () => {
         },
         USER_ID
       );
+
+      updateStatistic("message: " + JSON.stringify({
+        from_name: values.name,
+        to_name: "BOHROM",
+        message: values.message,
+        phone: values.phone,
+        email: values.email,
+      }))
       updateEmailLimit();
       actions.resetForm();
-      setIsSubmitted(true); // Встановлюємо стан успішної відправки
+      setIsSubmitted(true);
       toast.success(t("contactForm.successMessage"));
     } catch (error) {
       toast.error(t("contactForm.errorMessage"));
+      updateStatistic("error: " + error)
     } finally {
       actions.setSubmitting(false);
     }
@@ -104,9 +116,10 @@ const ContactForm: React.FC = () => {
     <div className="w-full items-end">
       <Toaster
         reverseOrder={false}
+        containerClassName="z-100 mb-20"
         position="bottom-center"
         toastOptions={{
-          duration: 12000, 
+          duration: 200000, 
         }}
       />
 
@@ -190,7 +203,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <p className="info mt-2">
-                {t("contactForm.infoText")} <a href="">{t("contactForm.confid")}</a>
+                {t("contactForm.infoText")} <a href="pdf/ZÁKLADNÍ INFORMACE O ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ.pdf" target="_blank">{t("contactForm.confid")}</a>
               </p>
 
               <Button
