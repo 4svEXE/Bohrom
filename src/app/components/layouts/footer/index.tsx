@@ -25,7 +25,7 @@ const Footer: React.FC<SidebarProps> = () => {
     <footer className="Footer">
       <div className="container m-auto grid md:grid-cols-4 grid-cols-1 gap-10">
         <a href={links.start}>
-          <img src="/Bohrom/assets/logo-black.svg" alt={t("footer.altLogo")} />
+          <img src="/assets/logo-black.svg" alt={t("footer.altLogo")} />
         </a>
 
         <div className="flex flex-col gap-2">

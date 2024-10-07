@@ -32,7 +32,7 @@
   "about": {
     "p1": " — je tým profesionálů, kteří vám pomohou udělat jakýkoli krok rychle, bezpečně a za dostupnou cenu.",
     "p2": "Působíme v Libereckém kraji a po celé ČR. Náš vozový park je vybaven moderním vybavením, které nám umožňuje kvalitně přepravovat různé druhy nákladů a zajistit jejich bezpečnost při přepravě.",
-    "p3": "Specializujeme se na stěhování domů a kanceláří, nákladní dopravu, moderní technikou a spolehlivou dopravu.",
+    "p3": "Specializujeme se na stěhování domů a kanceláří, stejně jako nákladní dopravu, pomocí moderního vybavení a spolehlivých vozidel.",
     "p4": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu pro uspokojení vašich potřeb kdykoli."
   },
   "tariffs": {
@@ -54,14 +54,18 @@
     "title2": "Služby",
     "heading_1": "Stěhování domů a kanceláře",
     "paragraph_1": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost.",
+
     "heading_2": "Demontáž nábytku",
     "paragraph_2": "Demontáž a balení nábytku pro pohodlnou přepravu a následnou montáž.",
+
     "heading_3": "Nákladní doprava",
     "paragraf_3": "Efektivní přeprava různých druhů nákladu, včetně těžkých a neskladných předmětů.",
+
     "heading_4": "Odstranění nepotřebného nábytku a stavebního odpadu",
     "paragraph_4": "Organizace odvozu starého nábytku a recyklace stavebního odpadu, aby bylo vaše místo čisté.",
     "heading_5": "Přeprava nábytku a zboží z obchodů",
     "paragraph_5": "Rychlé a spolehlivé dodání nového nábytku a zboží z prodejen na místo určení.",
+
     "heading_6": "Doprava stavebních materiálů",
     "paragraph_6": "Doprava stavebních materiálů pro vaši renovaci nebo stavbu."
   },

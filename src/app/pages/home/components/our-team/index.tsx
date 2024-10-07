@@ -13,14 +13,14 @@ const OurTeam: React.FC = () => {
   const { t } = useTranslation();
 
   const teamMembers = [
-    { id: 6, image: "/Bohrom/assets/img/our-team/6.jpg" },
-    { id: 1, image: "/Bohrom/assets/img/our-team/1.jpg" },
-    { id: 3, image: "/Bohrom/assets/img/our-team/3.jpg" },
-    { id: 8, image: "/Bohrom/assets/img/our-team/8.jpg" },
-    { id: 2, image: "/Bohrom/assets/img/our-team/2.jpg" },
-    { id: 5, image: "/Bohrom/assets/img/our-team/5.jpg" },
-    { id: 7, image: "/Bohrom/assets/img/our-team/7.jpg" },
-    { id: 4, image: "/Bohrom/assets/img/our-team/4.jpg" },
+    { id: 6, image: "/assets/img/our-team/6.jpg" },
+    { id: 1, image: "/assets/img/our-team/1.jpg" },
+    { id: 3, image: "/assets/img/our-team/3.jpg" },
+    { id: 8, image: "/assets/img/our-team/8.jpg" },
+    { id: 2, image: "/assets/img/our-team/2.jpg" },
+    { id: 5, image: "/assets/img/our-team/5.jpg" },
+    { id: 7, image: "/assets/img/our-team/7.jpg" },
+    { id: 4, image: "/assets/img/our-team/4.jpg" },
   ];
 
   return (

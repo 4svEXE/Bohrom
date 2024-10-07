@@ -15,7 +15,7 @@ const WhyUs: React.FC = () => {
         <div className="grid grid-cols-3">
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/1.svg" alt={t("whyUs.alt1")} />
+              <img src="/assets/img/why-us/1.svg" alt={t("whyUs.alt1")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">
@@ -26,7 +26,7 @@ const WhyUs: React.FC = () => {
 
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/2.svg" alt={t("whyUs.alt2")} />
+              <img src="/assets/img/why-us/2.svg" alt={t("whyUs.alt2")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">
@@ -37,7 +37,7 @@ const WhyUs: React.FC = () => {
 
           <div className="grid-item">
             <div className="img-container">
-              <img src="/Bohrom/assets/img/why-us/3.svg" alt={t("whyUs.alt3")} />
+              <img src="/assets/img/why-us/3.svg" alt={t("whyUs.alt3")} />
             </div>
 
             <div className="flex flex-col items-center gap-4">

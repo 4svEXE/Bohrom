@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <div className="About grid md:grid-cols-2 gap-20">
         <div className="col-span-1">
           <img
-            src="/Bohrom/assets/img/about/collage.png"
+            src="/assets/img/about/collage.png"
             alt="boxes for moving"
           />
         </div>

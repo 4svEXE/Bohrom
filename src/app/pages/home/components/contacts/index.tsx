@@ -9,7 +9,7 @@ const Contacts = () => {
     <section className="Contacts">
       <img
         className="map"
-        src="/Bohrom/assets/img/Map.svg"
+        src="/assets/img/Map.svg"
         alt={t("footer.altLogo")}
       />
 
@@ -32,6 +32,15 @@ const Contacts = () => {
             <div className="flex flex-col gap-2">
               <h6>{t("footer.phone")}</h6>
               <a href={`tel:${t("var.tel")}`}>{t("var.tel")}</a>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <h6>Bohdan Ladomyriak</h6>
+              <h6>IČO: 22060910</h6>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h6>Roman Kondratiev</h6>
+              <h6>IČO: 22058834</h6>
             </div>
           </div>
         </div>

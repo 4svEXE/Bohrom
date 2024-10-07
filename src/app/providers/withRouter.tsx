@@ -8,7 +8,7 @@ interface WithRouterProps {
 export default function WithRouter({ children }: WithRouterProps) {
   return (
     // <BrowserRouter basename="/">
-    <BrowserRouter basename="/Bohrom/">
+    <BrowserRouter basename="/">
         {children}
     </BrowserRouter>
   );

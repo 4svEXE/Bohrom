@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
         <div className="success-message">
           <h3>{t("contactForm.successTitle")}</h3>
           <p>{t("contactForm.successDescription")}</p>
-          <img className="mt-10" src="/Bohrom/assets/img/why-us/3.svg" alt="Excellent Customer Service"></img>
+          <img className="mt-10" src="/assets/img/why-us/3.svg" alt="Excellent Customer Service"></img>
         </div>
       ) : (
         <Formik
@@ -203,7 +203,7 @@ const ContactForm: React.FC = () => {
               </div>
 
               <p className="info mt-2">
-                {t("contactForm.infoText")} <a href="pdf/ZÁKLADNÍ INFORMACE O ZPRACOVÁNÍ OSOBNÍCH ÚDAJŮ.pdf" target="_blank">{t("contactForm.confid")}</a>
+                {t("contactForm.infoText")} <a href="pdf/file.pdf" target="_blank">{t("contactForm.confid")}</a>
               </p>
 
               <Button
