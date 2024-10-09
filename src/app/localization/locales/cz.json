@@ -36,17 +36,17 @@
     "p4": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu pro uspokojení vašich potřeb kdykoli."
   },
   "tariffs": {
-    "title": "Cla",
+    "title": "Tarify",
     "p": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom kdykoli vyhověli vašim potřebám",
-    "vozidlo": "Vozidlo (dodávka)",
+    "vehicle": "Vozidlo (dodávka)",
     "loader1": "1 nakladač",
     "loader2": "2 nakladače",
     "loader3": "3 nakladače",
     "kmRate": "Auto na km",
     "price1": "700 korun/hodina",
-    "price2": "800 korun za hodinu",
+    "price2": "800 korun/hodina",
     "price3": "900 korun/hodina",
-    "price4": "1100 korun/hod",
+    "price4": "1100 korun/hodina",
     "price5": "17 korun/km"
   },
   "ourServices": {
