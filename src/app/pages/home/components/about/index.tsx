@@ -22,6 +22,7 @@ const About: React.FC = () => {
             <li>{t("about.p2")}</li>
             <li>{t("about.p3")}</li>
             <li>{t("about.p4")}</li>
+            <li>{t("about.p5")}</li>
           </ul>
         </div>
       </div>

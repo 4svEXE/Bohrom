@@ -6,19 +6,25 @@
     border-radius: 45px;
     margin: 120px 0;
 
+
+
     @media (max-width: $media-tablet) {
         padding: 24px 12px;
     }
 
-    .map{
+    .map {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    h2{
+    h2 {
         color: #fff;
+    }
+
+    h3 {
+        font-size: 32px;
     }
 
 
@@ -44,8 +50,6 @@
         }
     }
 
-
-
     a[href^="tel:"] {
         font-family: Nunito Sans;
         font-size: 24px;
@@ -54,6 +58,53 @@
         text-align: left;
         color: #FF6A00;
     }
+
+    .Btn {
+        width: 42px;
+        height: 42px;
+        width: 45px;
+        height: 45px;
+
+        cursor: pointer;
+        position: relative;
+        border-radius: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 130%;
+            height: 130%;
+            border: 1px dashed #ffffff00;
+            opacity: 0;
+            border-radius: 100%;
+            left: -15%;
+            top: -15%;
+            transition: .4s;
+        }
+
+        &:hover{
+            &:after {
+                border: 1px dashed #fff;
+                opacity: 1;
+                animation: rotation 5s infinite linear;
+            }
+        }
+    }
+
+    @keyframes rotation {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
 }
 
 .contact-section {

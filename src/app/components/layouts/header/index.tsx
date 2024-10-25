@@ -27,7 +27,7 @@ const Header: React.FC<SidebarProps> = () => {
   return (
     <div className="container header-container">
       <header className={`Header ${activeNav ? "active" : ""}`}>
-        <img src="/assets/logo-white.svg" alt="Logo" className="logo" />
+        <a href="#start"><img src="/assets/logo-white.svg" alt="Logo" className="logo" /></a>
 
         <nav className={`navigation ${isShowMenu ? "show-menu" : ""}`}>
           <ul onClick={toggleNav}>
@@ -61,7 +61,7 @@ const Header: React.FC<SidebarProps> = () => {
           </li>
           <ul className="phone">
             <li>
-              <a type="tel" href={`tel:${t("var.tel")}`} onClick={()=> updateStatistic("Phone clicked")}>
+              <a type="tel" href={`tel:${t("var.tel")}`} onClick={()=> updateStatistic("Натиснуто на номер телефону в хедері.")}>
                 <img src="/assets/icons/phone-outgoing.svg" alt="call" />
                 {t("var.tel")}
               </a>

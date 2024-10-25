@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import FirstScreen from "./components/first-screen";
 import "./index.scss";
+import SendPhoneButton from "../../components/shared/sendPhoneButton/SendPhoneButton";
 
 // Ліниве завантаження компонентів
 const About = React.lazy(() => import("./components/about"));
@@ -33,6 +34,8 @@ export default function HomePage() {
           <div id="contacts"><Contacts/></div>
         </React.Suspense>
       </div>
+
+      <SendPhoneButton/>
     </div>
   );
 }

@@ -15,8 +15,10 @@ const Contacts = () => {
 
       <div className="md:grid-cols-2 grid grid-cols-1 gap-20">
         <div className="col-span-1 flex flex-col items-center">
-          <div className="col-span-1 flex flex-col gap-10">
-            <h2 className="w-full md:text-start text-center mb-4">{t("footer.contacts")}</h2>
+          <div className="col-span-1 flex flex-col gap-10 w-full">
+            <h2 className="w-full md:text-start text-center mb-4">
+              {t("footer.contacts")}
+            </h2>
             <div className="flex flex-col gap-2">
               <h6>{t("footer.email")}</h6>
               <a href={`mailto:${t("var.email")}`}>{t("var.email")}</a>
@@ -35,17 +37,53 @@ const Contacts = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <h6>Bohdan Ladomyriak</h6>
-              <h6>IČO: 22060910</h6>
+              <h6>IČO:</h6>
+              <p>22060910</p>
             </div>
-            <div className="flex flex-col gap-2">
-              <h6>Roman Kondratiev</h6>
-              <h6>IČO: 22058834</h6>
+
+            <div className="flex gap-3 flex-wrap justify-center md:justify-start m-auto w-[80%] md:w-full">
+              <a href={`tel:${t("var.tel")}`} className="Btn telegram">
+                <img src="/assets/icons/phone.svg" width="40px" alt="phone" />
+              </a>
+
+              <a href="https://t.me/+420775473171" className="Btn telegram">
+                <img src="/assets/icons/tg.svg" width="40px" alt="Telegram" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61567518533792"
+                className="Btn facebook"
+              >
+                <img src="/assets/icons/fb.svg" width="40px" alt="Facebook" />
+              </a>
+
+              <a href="https://m.me/bohrom.stehovani" className="Btn messenger">
+                <img
+                  src="/assets/icons/fb_msgr.svg"
+                  width="40px"
+                  alt="Messenger"
+                />
+              </a>
+
+              <a href="viber://chat?number=%2B420775473171" className="Btn viber">
+                <img src="/assets/icons/viber.svg" width="40px" alt="Viber" />
+              </a>
+
+              <a href="https://wa.me/420775473171" className="Btn whatsapp">
+                <img
+                  src="/assets/icons/whatsap.svg"
+                  width="40px"
+                  alt="WhatsApp"
+                />
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 flex flex-col items-end md:w-[75%]">
+        <div
+          className="col-span-1 flex flex-col items-end md:w-[75%]"
+          id="contact-form"
+        >
           <ContactForm />
         </div>
       </div>
