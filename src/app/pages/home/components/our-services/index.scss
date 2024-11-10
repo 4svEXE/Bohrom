@@ -7,7 +7,7 @@
         display: grid;
         gap: 28px;
 
-        @media (max-width: $media-tablet) {
+        @media (max-width: $media-desktop) {
             gap: 12px;
             padding: 0 8px;
         }
@@ -23,11 +23,15 @@
             flex-direction: column;
             gap: 24px;
 
-            @media (max-width: $media-tablet) {
+            @media (max-width: $media-desktop) {
                 padding: 16px;
                 border-radius: 16px;
                 gap: 12px;
+            }
+
+            @media (max-width: $media-tablet) {
                 height: auto;
+                padding: 30px 12px;
             }
 
             h6 {
@@ -56,6 +60,13 @@
                 @media (max-width: $media-tablet) {
                     font-size: 16px;
                     line-height: 16px;
+                }
+            }
+
+            &:nth-child(1){
+                @media (max-width: $media-desktop) {
+                    opacity: 0;
+                    overflow: hidden;
                 }
             }
 

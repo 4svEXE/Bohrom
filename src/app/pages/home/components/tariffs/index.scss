@@ -7,6 +7,10 @@
     border-radius: 45px;
     margin: 120px 0;
 
+    @media (max-width: $media-netbook) {
+        padding: 20px 12px;
+    }
+
     h2 {
         color: #FFFFFF;
     }

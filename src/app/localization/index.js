@@ -4,6 +4,10 @@ import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
 import cz from "./locales/cz.json";
+import uk from "./locales/uk.json";
+import de from "./locales/de.json";
+import vi from "./locales/vi.json";
+import pl from "./locales/pl.json";
 
 const defaultFallback = "cz";
 const defaultTranslationNamespace = "translation";
@@ -21,6 +25,18 @@ i18next
       },
       cz: {
         translation: cz,
+      },
+      uk: {
+        translation: uk,
+      },
+      de: {
+        translation: de,
+      },
+      vi: {
+        translation: vi,
+      },
+      pl: {
+        translation: pl,
       },
     },
     react: {

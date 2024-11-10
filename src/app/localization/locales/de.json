@@ -1,0 +1,131 @@
+{
+  "var": {
+    "tel": "+420775473171",
+    "email": "bohromstehovani@gmail.com",
+    "companyCaps": "BOHROM"
+  },
+  "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
+  "nav": {
+    "links": {
+      "about": "#about",
+      "services": "#our-services",
+      "tarifs": "#tarifs",
+      "contacts": "#contacts",
+      "start": "#start"
+    }
+  },
+  "footer": {
+    "altLogo": "Logo des Unternehmens Bohrom",
+    "navigation": "Navigation",
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "tarifs": "Preise",
+    "contacts": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon"
+  },
+  "hiro": {
+    "h1": "Professioneller Transport für Ihren Komfort",
+    "p": "Sicherer Transport von Möbeln und Fracht im ganzen Land",
+    "buttonText": "Anfrage",
+    "giveNumber": "Hinterlassen Sie Ihre Nummer",
+    "wellCallYou": "Unser Spezialist wird sich mit Ihnen in Verbindung setzen und alle Ihre Fragen beantworten."
+  },
+  "about": {
+    "p1": "— ein Team von Profis, das Ihnen bei allen Phasen Ihres Umzugs schnell, sicher und zu einem erschwinglichen Preis hilft.",
+    "p2": "Wir arbeiten im Liberec-Kreis und in ganz Tschechien. Unsere Fahrzeugflotte ist mit moderner Ausrüstung ausgestattet, die es uns ermöglicht, verschiedene Arten von Fracht sicher zu transportieren.",
+    "p3": "Wir spezialisieren uns hauptsächlich auf Umzüge und Entsorgungen von Wohnungen, Häusern und Büros.",
+    "p4": "Wir verfügen über moderne Technik und garantieren einen sicheren Transport mit Versicherung.",
+    "p5": "Wir sind 24 Stunden am Tag, 7 Tage die Woche für Sie verfügbar."
+  },
+  "tariffs": {
+    "title": "Tarife",
+    "p": "Wir sind 24 Stunden am Tag, 7 Tage die Woche verfügbar, um Ihre Bedürfnisse jederzeit zu erfüllen.",
+    "vehicle": "Fahrzeug (Kleintransporter)",
+    "loader1": "1 Umzugshelfer",
+    "loader2": "2 Umzugshelfer",
+    "loader3": "3 Umzugshelfer",
+    "kmRate": "Fahrzeug pro km",
+    "price1": "700 CZK/Stunde",
+    "price2": "800 CZK/Stunde",
+    "price3": "950 CZK/Stunde",
+    "price4": "1200 CZK/Stunde",
+    "price5": "17 CZK/km"
+  },
+  "ourServices": {
+    "title1": "Unsere",
+    "title2": "Dienstleistungen",
+    "heading_1": "Umzüge und Entsorgung von Wohnungen, Häusern und Büros",
+    "paragraph_1": "Professioneller Umzug Ihres Zuhauses oder Büros mit Fokus auf Details und Sicherheit.",
+    "heading_2": "Möbelabbau",
+    "paragraph_2": "Demontage und Verpackung von Möbeln für einen bequemen Transport und anschließende Montage.",
+    "heading_3": "Frachttransport",
+    "paragraph_3": "Effizienter Transport verschiedener Arten von Fracht, einschließlich schwerer und sperriger Gegenstände.",
+    "heading_4": "Entsorgung von unnötigen Möbeln und Bauschutt",
+    "paragraph_4": "Organisation des Abtransports von alten Möbeln und Recycling von Bauschutt.",
+    "heading_5": "Transport von Möbeln und Waren aus Geschäften",
+    "paragraph_5": "Schnelle und zuverlässige Lieferung von neuen Möbeln und Waren vom Geschäft zum Zielort.",
+    "heading_6": "Transport von Baumaterialien",
+    "paragraph_6": "Transport von Baumaterialien für Ihre Renovierung oder Neubau."
+  },
+  "whyUs": {
+    "titlePart1": "Warum",
+    "titlePart2": "uns wählen",
+    "alt1": "Umzug von Wohnungen, Häusern und Büros",
+    "alt2": "Wettbewerbsfähige Preise",
+    "alt3": "Ausgezeichneter Kundenservice",
+
+    "reason1": {
+      "title": "Umzug von Wohnungen, Häusern und Büros",
+      "description": "Professioneller Umzug Ihres Zuhauses oder Büros mit Fokus auf Details und Sicherheit."
+    },
+    "reason2": {
+      "title": "Wettbewerbsfähige Preise",
+      "description": "Erschwingliche Preise und qualitativ hochwertige Dienstleistungen."
+    },
+
+    "reason3": {
+      "title": "Ausgezeichneter Kundenservice",
+      "description": "Unser Team ist jederzeit bereit, Ihnen zu helfen und alle Ihre Fragen oder Probleme zu lösen."
+    }
+  },
+  "ourTeam": {
+    "title": "Unser",
+    "subtitle": "Team in Aktion",
+    "alt1": "Umzug nach Tschechien",
+    "alt2": "Professioneller Umzug Liberec-Kreis",
+    "alt3": "Frachttransport in Tschechien",
+    "alt4": "Büroumzug",
+    "alt5": "Haushaltsumzug",
+    "alt6": "Zuverlässiger Transport",
+    "alt7": "Sicherer Transport von Fracht",
+    "alt8": "Umzug mit Profis"
+  },
+  "contactForm": {
+    "successTitle": "Gesendet!",
+    "successDescription": "Wir werden Sie so schnell wie möglich kontaktieren.",
+    "getFeedback": "Kontaktformular",
+    "nameLabel": "Name:",
+    "emailLabel": "E-Mail-Adresse:",
+    "phoneLabel": "Telefon:",
+    "messageLabel": "Nachricht (falls erforderlich):",
+    "namePlaceholder": "Adam",
+    "emailPlaceholder": "email@email.com",
+    "phonePlaceholder": "+420 000 000 000",
+    "messagePlaceholder": "Nachricht (falls erforderlich):",
+    "submitButton": "Absenden",
+    "infoText": "Durch Klicken auf die Schaltfläche stimmen Sie der Verarbeitung Ihrer persönlichen Daten zu und akzeptieren unsere ",
+    "confid": "Datenschutzbestimmungen",
+    "loadingMessage": "Nachricht wird geladen...",
+    "successMessage": "Nachricht wurde erfolgreich gesendet.",
+    "errorMessage": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "limitExceeded": "Zu viele Versuche. Bitte versuchen Sie es später erneut."
+  },
+  "workingHours": "Öffnungszeiten",
+  "workingHoursText": "Wir sind 24 Stunden am Tag, 7 Tage die Woche geöffnet.",
+  "workingHours24": "24/7",
+  "errors": {
+    "required": "Dieses Feld ist erforderlich",
+    "invalidEmail": "Ungültige E-Mail-Adresse"
+  }
+}

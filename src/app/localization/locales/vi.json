@@ -1,0 +1,131 @@
+{
+  "var": {
+    "tel": "+420775473171",
+    "email": "bohromstehovani@gmail.com",
+    "companyCaps": "BOHROM"
+  },
+  "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
+  "nav": {
+    "links": {
+      "about": "#about",
+      "services": "#our-services",
+      "tarifs": "#tarifs",
+      "contacts": "#contacts",
+      "start": "#start"
+    }
+  },
+  "footer": {
+    "altLogo": "Logo công ty Bohrom",
+    "navigation": "Điều hướng",
+    "aboutUs": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "tarifs": "Bảng giá",
+    "contacts": "Liên hệ",
+    "email": "Email",
+    "phone": "Điện thoại"
+  },
+  "hiro": {
+    "h1": "Vận chuyển chuyên nghiệp cho sự thoải mái của bạn",
+    "p": "Vận chuyển an toàn đồ đạc và hàng hóa trên toàn quốc",
+    "buttonText": "Yêu cầu",
+    "giveNumber": "Để lại số điện thoại của bạn",
+    "wellCallYou": "Chuyên gia của chúng tôi sẽ liên hệ và trả lời tất cả câu hỏi của bạn."
+  },
+  "about": {
+    "p1": "— một đội ngũ chuyên nghiệp giúp bạn nhanh chóng, an toàn và giá cả phải chăng trong mọi giai đoạn chuyển nhà.",
+    "p2": "Chúng tôi hoạt động tại khu vực Liberec và trên toàn Czech. Đội xe của chúng tôi được trang bị thiết bị hiện đại giúp vận chuyển nhiều loại hàng hóa an toàn.",
+    "p3": "Chúng tôi chuyên về chuyển nhà, văn phòng và xử lý rác thải.",
+    "p4": "Chúng tôi có thiết bị hiện đại và bảo hiểm vận chuyển an toàn.",
+    "p5": "Chúng tôi luôn sẵn sàng phục vụ bạn 24/7."
+  },
+  "tariffs": {
+    "title": "Bảng giá",
+    "p": "Chúng tôi sẵn sàng phục vụ bạn 24/7 để đáp ứng nhu cầu của bạn bất cứ lúc nào.",
+    "vehicle": "Xe tải nhỏ",
+    "loader1": "1 phụ xe",
+    "loader2": "2 phụ xe",
+    "loader3": "3 phụ xe",
+    "kmRate": "Xe tính theo km",
+    "price1": "700 CZK/giờ",
+    "price2": "800 CZK/giờ",
+    "price3": "950 CZK/giờ",
+    "price4": "1200 CZK/giờ",
+    "price5": "17 CZK/km"
+  },
+  "ourServices": {
+    "title1": "Dịch vụ của chúng tôi",
+    "title2": "Dịch vụ",
+    "heading_1": "Chuyển nhà, văn phòng và xử lý rác thải",
+    "paragraph_1": "Chuyển nhà hoặc văn phòng chuyên nghiệp với sự chú trọng đến chi tiết và an toàn.",
+    "heading_2": "Dịch vụ tháo lắp đồ đạc",
+    "paragraph_2": "Tháo lắp và đóng gói đồ đạc để vận chuyển dễ dàng và lắp đặt lại sau khi chuyển.",
+    "heading_3": "Vận chuyển hàng hóa",
+    "paragraph_3": "Vận chuyển các loại hàng hóa khác nhau, bao gồm các đồ vật cồng kềnh và nặng.",
+    "heading_4": "Xử lý rác thải và đồ đạc cũ",
+    "paragraph_4": "Tổ chức việc thu dọn đồ đạc cũ và tái chế rác thải xây dựng.",
+    "heading_5": "Vận chuyển đồ đạc từ cửa hàng",
+    "paragraph_5": "Giao hàng nhanh chóng và đáng tin cậy từ cửa hàng đến địa chỉ của bạn.",
+    "heading_6": "Vận chuyển vật liệu xây dựng",
+    "paragraph_6": "Vận chuyển vật liệu xây dựng cho các công trình sửa chữa hoặc xây dựng mới."
+  },
+  "whyUs": {
+    "titlePart1": "Tại sao",
+    "titlePart2": "chọn chúng tôi",
+    "alt1": "Chuyển nhà, văn phòng và xử lý rác thải",
+    "alt2": "Giá cả cạnh tranh",
+    "alt3": "Dịch vụ khách hàng tuyệt vời",
+
+    "reason1": {
+      "title": "Chuyển nhà, văn phòng và xử lý rác thải",
+      "description": "Chuyển nhà hoặc văn phòng chuyên nghiệp với sự chú trọng đến chi tiết và an toàn."
+    },
+    "reason2": {
+      "title": "Giá cả cạnh tranh",
+      "description": "Giá cả hợp lý và dịch vụ chất lượng cao."
+    },
+
+    "reason3": {
+      "title": "Dịch vụ khách hàng tuyệt vời",
+      "description": "Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ và giải quyết mọi câu hỏi hoặc vấn đề của bạn."
+    }
+  },
+  "ourTeam": {
+    "title": "Đội ngũ của chúng tôi",
+    "subtitle": "Đội ngũ của chúng tôi đang làm việc",
+    "alt1": "Chuyển nhà tại Czech",
+    "alt2": "Chuyển nhà chuyên nghiệp tại Liberec",
+    "alt3": "Vận chuyển hàng hóa tại Czech",
+    "alt4": "Chuyển văn phòng",
+    "alt5": "Chuyển nhà",
+    "alt6": "Vận chuyển đáng tin cậy",
+    "alt7": "Vận chuyển hàng hóa an toàn",
+    "alt8": "Chuyển nhà với đội ngũ chuyên nghiệp"
+  },
+  "contactForm": {
+    "successTitle": "Đã gửi!",
+    "successDescription": "Chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể.",
+    "getFeedback": "Mẫu liên hệ",
+    "nameLabel": "Họ và tên:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Số điện thoại:",
+    "messageLabel": "Tin nhắn (nếu có):",
+    "namePlaceholder": "Adam",
+    "emailPlaceholder": "email@email.com",
+    "phonePlaceholder": "+420 000 000 000",
+    "messagePlaceholder": "Tin nhắn (nếu có):",
+    "submitButton": "Gửi",
+    "infoText": "Bằng cách nhấp vào nút này, bạn đồng ý với việc xử lý dữ liệu cá nhân của mình và chấp nhận ",
+    "confid": "Chính sách bảo mật",
+    "loadingMessage": "Đang tải tin nhắn...",
+    "successMessage": "Tin nhắn đã gửi thành công.",
+    "errorMessage": "Đã xảy ra lỗi khi gửi tin nhắn. Vui lòng thử lại.",
+    "limitExceeded": "Quá nhiều lần thử. Vui lòng thử lại sau."
+  },
+  "workingHours": "Giờ làm việc",
+  "workingHoursText": "Chúng tôi phục vụ 24/7.",
+  "workingHours24": "24/7",
+  "errors": {
+    "required": "Trường này là bắt buộc",
+    "invalidEmail": "Email không hợp lệ"
+  }
+}

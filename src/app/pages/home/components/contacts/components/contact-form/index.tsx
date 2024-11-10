@@ -5,13 +5,10 @@ import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { toast, Toaster } from "react-hot-toast";
 import Button from "../../../../../../components/shared/button";
-import { updateStatistic } from "../../../../../../helpers/statisticHelper";
 
 import "./index.scss";
 
 interface FormValues {
-  name: string;
-  email: string;
   phone: string;
   message: string;
 }
@@ -31,10 +28,6 @@ const ContactForm: React.FC = () => {
   const EMAIL_LIMIT_MAX = 3;
 
   const validationSchema = Yup.object({
-    name: Yup.string().required(t("errors.required")),
-    email: Yup.string()
-      .email(t("errors.invalidEmail"))
-      .required(t("errors.required")),
     phone: Yup.string().required(t("errors.required")),
     message: Yup.string(),
   });
@@ -75,7 +68,6 @@ const ContactForm: React.FC = () => {
     if (!canSendEmail()) {
       toast.error(t("contactForm.limitExceeded"));
       actions.setSubmitting(false);
-      updateStatistic("Error: contactForm.limitExceeded")
       return;
     }
 
@@ -84,29 +76,18 @@ const ContactForm: React.FC = () => {
         SERVICE_ID,
         TEMPLATE_ID,
         {
-          from_name: values.name,
           to_name: "BOHROM",
           message: values.message,
           phone: values.phone,
-          email: values.email,
         },
         USER_ID
       );
-
-      updateStatistic("message: " + JSON.stringify({
-        from_name: values.name,
-        to_name: "BOHROM",
-        message: values.message,
-        phone: values.phone,
-        email: values.email,
-      }))
       updateEmailLimit();
       actions.resetForm();
       setIsSubmitted(true);
       toast.success(t("contactForm.successMessage"));
     } catch (error) {
       toast.error(t("contactForm.errorMessage"));
-      updateStatistic("error: " + error)
     } finally {
       actions.setSubmitting(false);
     }
@@ -132,8 +113,6 @@ const ContactForm: React.FC = () => {
       ) : (
         <Formik
           initialValues={{
-            name: "",
-            email: "",
             phone: "",
             message: "",
           }}
@@ -144,34 +123,6 @@ const ContactForm: React.FC = () => {
             <form className="contact-form gap-10" onSubmit={formik.handleSubmit}>
               <h3 className="mb-8">{t("contactForm.getFeedback")}</h3>
 
-              <div className="flex flex-col">
-                <label htmlFor="name">{t("contactForm.nameLabel")}</label>
-                <Field
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t("contactForm.namePlaceholder")}
-                />
-                <ErrorMessage
-                  name="name"
-                  component="div"
-                  className="error-message"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="email">{t("contactForm.emailLabel")}</label>
-                <Field
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder={t("contactForm.emailPlaceholder")}
-                />
-                <ErrorMessage
-                  name="email"
-                  component="div"
-                  className="error-message"
-                />
-              </div>
               <div className="flex flex-col">
                 <label htmlFor="phone">{t("contactForm.phoneLabel")}</label>
                 <Field

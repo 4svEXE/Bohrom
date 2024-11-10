@@ -26,7 +26,7 @@
   },
   "hiro": {
     "h1": "Profesionální doprava pro vaše pohodlí",
-    "p": "Bezpečná přeprava nábytku a nákladu po celé ČR",
+    "p": "Bezpečná přeprava nábytku a nákladů po celé ČR",
     "buttonText": "Poptávka",
     "giveNumber": "Zanechte své číslo",
     "wellCallYou": "A náš specialista se s  vámi spojí a zodpoví všechny Vaše dotazy."
@@ -43,8 +43,8 @@
     "p": "Jsme k dispozici 24 hodin denně, 7 dní v týdnu, abychom kdykoli vyhověli vašim potřebám",
     "vehicle": "Vozidlo (dodávka)",
     "loader1": "1 stehovák",
-    "loader2": "2 stěhovací",
-    "loader3": "3 stěhovací",
+    "loader2": "2 stěhováci",
+    "loader3": "3 stěhováci",
     "kmRate": "Auto na km",
     "price1": "700 korun/hodina",
     "price2": "800 korun/hodina",
@@ -109,7 +109,7 @@
     "emailLabel": "E-mailová adresa:",
     "phoneLabel": "Telefon:",
     "messageLabel": "Komentář (v případě potřeby):",
-    "namePlaceholder": "Petro",
+    "namePlaceholder": "Adam",
     "emailPlaceholder": "email@email.com",
     "phonePlaceholder": "+420 000 000 000",
     "messagePlaceholder": "Komentář (je-li vyžadován):",

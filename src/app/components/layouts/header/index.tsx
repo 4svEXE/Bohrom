@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../widgets/lang-switcher";
 import "./index.scss";
-import { updateStatistic } from "../../../helpers/statisticHelper";
 
 interface SidebarProps {
   toggleTheme: () => void;
@@ -11,7 +10,6 @@ interface SidebarProps {
 const Header: React.FC<SidebarProps> = () => {
   const { t } = useTranslation();
   const [activeNav, setActiveNav] = useState<boolean>(false);
-  const language = window.localStorage.getItem("i18nextLng") ?? "en";
   const [isShowMenu, setShowMenu] = useState<boolean>(false);
 
   const toggleNav = () => {
@@ -19,15 +17,12 @@ const Header: React.FC<SidebarProps> = () => {
     setActiveNav((prev) => !prev);
   };
 
-  const availableLanguages = [
-    { code: "en", name: "EN" },
-    { code: "cz", name: "CZ" },
-  ];
-
   return (
     <div className="container header-container">
       <header className={`Header ${activeNav ? "active" : ""}`}>
-        <a href="#start"><img src="/assets/logo-white.svg" alt="Logo" className="logo" /></a>
+        <a href="#start">
+          <img src="/assets/logo-white.svg" alt="Logo" className="logo" />
+        </a>
 
         <nav className={`navigation ${isShowMenu ? "show-menu" : ""}`}>
           <ul onClick={toggleNav}>
@@ -43,25 +38,22 @@ const Header: React.FC<SidebarProps> = () => {
             <li>
               <a href={t("nav.links.contacts")}>{t("footer.contacts")}</a>
             </li>
-            <li className="md:mt-0 mt-10 block md:hidden">
-              <LanguageSwitcher
-                currentLanguage={language}
-                availableLanguages={availableLanguages}
-              />
+            <li
+              className="md:mt-0 mt-10 block md:hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <LanguageSwitcher />
             </li>
           </ul>
         </nav>
 
         <div className="flex items-center gap-12 z-50">
           <li className="md:mt-0 mt-10 md:block hidden">
-            <LanguageSwitcher
-              currentLanguage={language}
-              availableLanguages={availableLanguages}
-            />
+            <LanguageSwitcher />
           </li>
           <ul className="phone">
             <li>
-              <a type="tel" href={`tel:${t("var.tel")}`} onClick={()=> updateStatistic("Натиснуто на номер телефону в хедері.")}>
+              <a type="tel" href={`tel:${t("var.tel")}`}>
                 <img src="/assets/icons/phone-outgoing.svg" alt="call" />
                 {t("var.tel")}
               </a>
