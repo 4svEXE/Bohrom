@@ -13,9 +13,11 @@ export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
     <div className="bg-white flex flex-col items-center w-full min-h-[100vh] overflow-hidden">
       <Header toggleTheme={toggleTheme} />
 
-      <div className="flex flex-col w-full" id="start">{children}</div>
+      <div className="flex flex-col w-full" id="start">
+        {children}
+      </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

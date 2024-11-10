@@ -1,0 +1,129 @@
+{
+  "var": {
+    "tel": "+420775473171",
+    "email": "bohromstehovani@gmail.com",
+    "companyCaps": "BOHROM"
+  },
+  "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
+  "nav": {
+    "links": {
+      "about": "#about",
+      "services": "#our-services",
+      "tarifs": "#tarifs",
+      "contacts": "#contacts",
+      "start": "#start"
+    }
+  },
+  "footer": {
+    "altLogo": "Logo firmy Bohrom",
+    "navigation": "Nawigacja",
+    "aboutUs": "O nas",
+    "services": "Usługi",
+    "tarifs": "Ceny",
+    "contacts": "Kontakty",
+    "email": "E-mail",
+    "phone": "Telefon"
+  },
+  "hiro": {
+    "h1": "Profesjonalny transport dla Twojej wygody",
+    "p": "Bezpieczny transport mebli i ładunków w całej Polsce",
+    "buttonText": "Zapytanie",
+    "giveNumber": "Zostaw swój numer",
+    "wellCallYou": "Nasz specjalista skontaktuje się z Tobą i odpowie na wszystkie Twoje pytania."
+  },
+  "about": {
+    "p1": "— zespół profesjonalistów, którzy pomogą Ci w kompleksowym przebiegu przeprowadzki szybko, bezpiecznie i w przystępnej cenie.",
+    "p2": "Działamy na terenie Dolnego Śląska i całej Polski. Nasza flota pojazdów wyposażona jest w nowoczesny sprzęt, który pozwala na bezpieczny transport różnych rodzajów ładunków.",
+    "p3": "Specjalizujemy się głównie w przeprowadzkach oraz opróżnianiu mieszkań, domów i biur.",
+    "p4": "Dysponujemy nowoczesną techniką i gwarantujemy bezpieczny transport z ubezpieczeniem.",
+    "p5": "Jesteśmy dostępni 24 godziny na dobę, 7 dni w tygodniu."
+  },
+  "tariffs": {
+    "title": "Cennik",
+    "p": "Jesteśmy dostępni 24 godziny na dobę, 7 dni w tygodniu, aby sprostać Twoim potrzebom",
+    "vehicle": "Pojazd (furgonetka)",
+    "loader1": "1 pracownik przeprowadzki",
+    "loader2": "2 pracowników przeprowadzki",
+    "loader3": "3 pracowników przeprowadzki",
+    "kmRate": "Pojazd na km",
+    "price1": "700 zł/godzina",
+    "price2": "800 zł/godzina",
+    "price3": "950 zł/godzina",
+    "price4": "1200 zł/godzina",
+    "price5": "17 zł/km"
+  },
+  "ourServices": {
+    "title1": "Nasze",
+    "title2": "Usługi",
+    "heading_1": "Przeprowadzki i opróżnianie mieszkań, domów i biur",
+    "paragraph_1": "Profesjonalne przeprowadzki Twojego domu lub biura z dbałością o szczegóły i bezpieczeństwo.",
+    "heading_2": "Demontaż mebli",
+    "paragraph_2": "Demontaż i pakowanie mebli dla wygodnego transportu i późniejszego montażu.",
+    "heading_3": "Transport ładunków",
+    "paragraph_3": "Efektywny transport różnych rodzajów ładunków, w tym ciężkich i niestandardowych przedmiotów.",
+    "heading_4": "Opróżnianie zbędnych mebli i odpadów budowlanych",
+    "paragraph_4": "Organizacja transportu starego wyposażenia i recykling odpadów budowlanych.",
+    "heading_5": "Transport mebli i towarów ze sklepów",
+    "paragraph_5": "Szybka i niezawodna dostawa nowych mebli i towarów z sklepów na miejsce docelowe.",
+    "heading_6": "Transport materiałów budowlanych",
+    "paragraph_6": "Transport materiałów budowlanych do Twojej renowacji lub budowy."
+  },
+  "whyUs": {
+    "titlePart1": "Dlaczego",
+    "titlePart2": "wybrać nas",
+    "alt1": "Przeprowadzki mieszkań, domów i biur",
+    "alt2": "Konkurencyjne ceny",
+    "alt3": "Świetna obsługa klienta",
+    "reason1": {
+      "title": "Przeprowadzki mieszkań, domów i biur",
+      "description": "Profesjonalna przeprowadzka Twojego domu lub biura z dbałością o szczegóły i bezpieczeństwo."
+    },
+    "reason2": {
+      "title": "Konkurencyjne ceny",
+      "description": "Dostępne ceny i usługi wysokiej jakości."
+    },
+    "reason3": {
+      "title": "Świetna obsługa klienta",
+      "description": "Nasz zespół jest zawsze gotów do pomocy i rozwiązywania wszelkich problemów."
+    }
+  },
+  "ourTeam": {
+    "title": "Nasz",
+    "subtitle": "zespół w akcji",
+    "alt1": "Przeprowadzka do Polski",
+    "alt2": "Profesjonalne przeprowadzki Dolny Śląsk",
+    "alt3": "Transport ładunków w Polsce",
+    "alt4": "Przeprowadzka biura",
+    "alt5": "Przeprowadzka gospodarstw domowych",
+    "alt6": "Niezawodny transport ładunków",
+    "alt7": "Bezpieczny transport ładunków",
+    "alt8": "Przeprowadzka z profesjonalistami"
+  },
+  "contactForm": {
+    "successTitle": "Wysłano!",
+    "successDescription": "Skontaktujemy się z Tobą jak najszybciej.",
+    "getFeedback": "Formularz kontaktowy",
+    "nameLabel": "Imię:",
+    "emailLabel": "Adres e-mail:",
+    "phoneLabel": "Telefon:",
+    "messageLabel": "Komentarz (jeśli wymagane):",
+    "namePlaceholder": "Adam",
+    "emailPlaceholder": "email@email.com",
+    "phonePlaceholder": "+420 000 000 000",
+    "messagePlaceholder": "Komentarz (jeśli wymagany):",
+    "submitButton": "Wyślij",
+    "infoText": "Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych i akceptujesz ",
+    "confid": "politykę prywatności",
+    "loadingMessage": "Ładowanie wiadomości...",
+    "successMessage": "Wiadomość została wysłana pomyślnie",
+    "errorMessage": "Wystąpił błąd przy wysyłaniu wiadomości. Spróbuj ponownie.",
+    "limitExceeded": "Zbyt wiele prób. Proszę spróbować później."
+  },
+  "workingHours": "godziny pracy",
+  "workingHoursText": "Jesteśmy dostępni 24 godziny na dobę, 7 dni w tygodniu",
+  "workingHours24": "24/7",
+  "errors": {
+    "required": "To pole jest wymagane",
+    "invalidEmail": "Nieprawidłowy adres e-mail"
+  }
+}

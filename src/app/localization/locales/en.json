@@ -27,13 +27,16 @@
   "hiro": {
     "h1": "Professional Transportation for Your Comfort",
     "p": "Safe transportation of furniture and cargo throughout the Czech Republic",
-    "buttonText": "Order Delivery"
+    "buttonText": "Order Delivery",
+    "giveNumber": "Write your phone number",
+    "wellCallYou": "And our specialist will contact you and answer all your questions."
   },
   "about": {
     "p1": " — is a team of professionals who will help you carry out any move quickly, safely, and at an affordable price.",
     "p2": "We operate in the Liberec region and throughout the Czech Republic. Our fleet is equipped with modern vehicles that allow us to efficiently transport various types of cargo, ensuring their safety during transportation.",
     "p3": "We specialize in residential and office relocations and cargo transportation, using modern equipment and reliable transport.",
-    "p4": "We are available 24 hours a day, 7 days a week to meet your needs at any convenient time."
+    "p4": "We have modern technologies and guarantee safe transportation with insurance.",
+    "p5": "We are available 24 hours a day, 7 days a week to meet your needs at any convenient time."
   },
   "tariffs": {
     "title": "Tariffs",
@@ -45,8 +48,8 @@
     "kmRate": "Transport vehicle per km",
     "price1": "700 Kč/hour",
     "price2": "800 Kč/hour",
-    "price3": "900 Kč/hour",
-    "price4": "1100 Kč/hour",
+    "price3": "950 Kč/hour",
+    "price4": "1200 Kč/hour",
     "price5": "17 Kč/km"
   },
   "ourServices": {

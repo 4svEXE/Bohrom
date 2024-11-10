@@ -16,7 +16,7 @@ const Tariffs: React.FC = () => {
         <div className="items-container">
           <div className="tariff-item">
             <img
-              src="/Bohrom/assets/img/tariffs/1.svg"
+              src="/assets/img/tariffs/1.svg"
               alt={t("tariffs.price1")}
             />
             <div className="flex flex-col gap-4 items-center justify-center">
@@ -26,7 +26,7 @@ const Tariffs: React.FC = () => {
           </div>
           <div className="tariff-item">
             <img
-              src="/Bohrom/assets/img/tariffs/2.svg"
+              src="/assets/img/tariffs/2.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader1")}
             />
             <div className="flex flex-col gap-4 items-center justify-center">
@@ -38,7 +38,7 @@ const Tariffs: React.FC = () => {
           </div>
           <div className="tariff-item">
             <img
-              src="/Bohrom/assets/img/tariffs/3.svg"
+              src="/assets/img/tariffs/3.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader2")}
             />
             <div className="flex flex-col gap-4 items-center justify-center">
@@ -50,7 +50,7 @@ const Tariffs: React.FC = () => {
           </div>
           <div className="tariff-item">
             <img
-              src="/Bohrom/assets/img/tariffs/4.svg"
+              src="/assets/img/tariffs/4.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader3")}
             />
             <div className="flex flex-col gap-4 items-center justify-center">
@@ -62,7 +62,7 @@ const Tariffs: React.FC = () => {
           </div>
           <div className="tariff-item">
             <img
-              src="/Bohrom/assets/img/tariffs/5.svg"
+              src="/assets/img/tariffs/5.svg"
               alt={t("tariffs.kmRate")}
             />
             <div className="flex flex-col gap-4 items-center justify-center">

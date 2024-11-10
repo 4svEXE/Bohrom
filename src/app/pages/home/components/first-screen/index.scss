@@ -1,37 +1,36 @@
 @import '../../../../scss/variables.scss';
 
-
 .FirstScreen {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("/assets/img/first-screen-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #33333394;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: #33333394;
+    filter: brightness(0.5);
+    z-index: 1;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     height: 100vh;
 
-    background-image: url("/Bohrom/assets/img/first-screen-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-color: #33333394;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #33333394;
-        filter: brightness(0.5);
-        z-index: 1;
-      }
-
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        height: 100vh;
-
-        p{
-            color: #FFFFFF;
-        }
+    p {
+      color: #FFFFFF;
     }
+  }
 }

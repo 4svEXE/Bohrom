@@ -1,22 +1,23 @@
+import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-
-import About from "./components/about";
-import Contacts from "./components/contacts";
 import FirstScreen from "./components/first-screen";
-import OurServices from "./components/our-services";
-import OurTeam from "./components/our-team";
-import Tariffs from "./components/tariffs";
-import WhyUs from "./components/why-choose-us";
-
 import "./index.scss";
+import SendPhoneButton from "../../components/shared/sendPhoneButton/SendPhoneButton";
+
+// Ліниве завантаження компонентів
+const About = React.lazy(() => import("./components/about"));
+const Contacts = React.lazy(() => import("./components/contacts"));
+const OurServices = React.lazy(() => import("./components/our-services"));
+const OurTeam = React.lazy(() => import("./components/our-team"));
+const Tariffs = React.lazy(() => import("./components/tariffs"));
+const WhyUs = React.lazy(() => import("./components/why-choose-us"));
 
 export default function HomePage() {
   const { t } = useTranslation();
 
   return (
     <div className="w-full">
-
       <Helmet>
         <title>{t("site-title")} </title>
       </Helmet>
@@ -24,14 +25,17 @@ export default function HomePage() {
       <div id="first-screen"><FirstScreen/></div>
 
       <div className="container m-auto">
-        <div id="about"><About/></div>
-        <div id="our-services"><OurServices/></div>
-        <div id="tarifs"><Tariffs/></div>
-        <div id="why-us"><WhyUs/></div>
-        <div id="our-team"><OurTeam/></div>
-        <div id="contacts"><Contacts/></div>
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <div id="about"><About/></div>
+          <div id="our-services"><OurServices/></div>
+          <div id="tarifs"><Tariffs/></div>
+          <div id="why-us"><WhyUs/></div>
+          <div id="our-team"><OurTeam/></div>
+          <div id="contacts"><Contacts/></div>
+        </React.Suspense>
       </div>
+
+      <SendPhoneButton/>
     </div>
   );
 }
-

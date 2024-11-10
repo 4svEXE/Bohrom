@@ -11,6 +11,10 @@
         padding: 44px 12px;
     }
 
+    img {
+        height: fit-content;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
