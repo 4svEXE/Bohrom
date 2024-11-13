@@ -8,8 +8,8 @@
 
         .slide {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            // justify-content: center;
+            // align-items: center;
 
             img {
                 width: 350px;
@@ -29,6 +29,8 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+           background-color: #fff;
+           border-radius: 8px;
         }
 
         .swiper-button-prev:after {

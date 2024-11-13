@@ -13,10 +13,10 @@ const Contacts = () => {
         alt={t("footer.altLogo")}
       />
 
-      <div className="md:grid-cols-2 grid grid-cols-1 gap-20">
+      <div className="md:grid-cols-2 grid grid-cols-1 gap-20" >
         <div className="col-span-1 flex flex-col items-center">
           <div className="col-span-1 flex flex-col gap-10 w-full">
-            <h2 className="w-full md:text-start text-center mb-4">
+            <h2 className="w-full md:text-start text-center mb-4" >
               {t("footer.contacts")}
             </h2>
             <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ const Contacts = () => {
               <p>22060910</p>
             </div>
 
-            <div className="flex gap-3 flex-wrap justify-center md:justify-start m-auto w-[80%] md:w-full">
+            <div className="flex gap-2 flex-wrap justify-center md:justify-start m-auto w-[90%] md:w-full" id="contact-form">
               <a href={`tel:${t("var.tel")}`} className="Btn telegram">
                 <img src="/assets/icons/phone.svg" width="40px" alt="phone" />
               </a>
@@ -82,7 +82,7 @@ const Contacts = () => {
 
         <div
           className="col-span-1 flex flex-col items-end md:w-[75%]"
-          id="contact-form"
+          
         >
           <ContactForm />
         </div>

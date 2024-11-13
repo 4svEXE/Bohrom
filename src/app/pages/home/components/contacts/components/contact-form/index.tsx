@@ -9,6 +9,7 @@ import Button from "../../../../../../components/shared/button";
 import "./index.scss";
 
 interface FormValues {
+  email: string;
   phone: string;
   message: string;
 }
@@ -17,25 +18,21 @@ const ContactForm: React.FC = () => {
   const { t } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const SERVICE_ID =
-    (import.meta.env.VITE_EMAILJS_SERVICE_ID as string) || "service_k3lakun";
-  const TEMPLATE_ID =
-    (import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string) || "template_msxc9d5";
-  const USER_ID =
-    (import.meta.env.VITE_EMAILJS_USER_ID as string) || "_i9RtJHIWkF2VHusS";
+  const SERVICE_ID = (import.meta.env.VITE_EMAILJS_SERVICE_ID as string) || "service_k3lakun";
+  const TEMPLATE_ID = (import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string) || "template_msxc9d5";
+  const USER_ID = (import.meta.env.VITE_EMAILJS_USER_ID as string) || "_i9RtJHIWkF2VHusS";
 
   const EMAIL_LIMIT_KEY = "emailSendLimit";
   const EMAIL_LIMIT_MAX = 3;
 
   const validationSchema = Yup.object({
+    email: Yup.string().email(t("errors.invalidEmail")).required(t("errors.required")),
     phone: Yup.string().required(t("errors.required")),
     message: Yup.string(),
   });
 
   const canSendEmail = () => {
-    const emailData = JSON.parse(
-      window.localStorage.getItem(EMAIL_LIMIT_KEY) || "{}"
-    );
+    const emailData = JSON.parse(window.localStorage.getItem(EMAIL_LIMIT_KEY) || "{}");
     const today = new Date().toLocaleDateString();
 
     if (emailData.date === today) {
@@ -46,9 +43,7 @@ const ContactForm: React.FC = () => {
   };
 
   const updateEmailLimit = () => {
-    const emailData = JSON.parse(
-      window.localStorage.getItem(EMAIL_LIMIT_KEY) || "{}"
-    );
+    const emailData = JSON.parse(window.localStorage.getItem(EMAIL_LIMIT_KEY) || "{}");
     const today = new Date().toLocaleDateString();
 
     if (emailData.date === today) {
@@ -61,10 +56,7 @@ const ContactForm: React.FC = () => {
     window.localStorage.setItem(EMAIL_LIMIT_KEY, JSON.stringify(emailData));
   };
 
-  const onSubmit = async (
-    values: FormValues,
-    actions: FormikHelpers<FormValues>
-  ) => {
+  const onSubmit = async (values: FormValues, actions: FormikHelpers<FormValues>) => {
     if (!canSendEmail()) {
       toast.error(t("contactForm.limitExceeded"));
       actions.setSubmitting(false);
@@ -77,8 +69,9 @@ const ContactForm: React.FC = () => {
         TEMPLATE_ID,
         {
           to_name: "BOHROM",
-          message: values.message,
+          email: values.email,
           phone: values.phone,
+          message: values.message,
         },
         USER_ID
       );
@@ -100,7 +93,7 @@ const ContactForm: React.FC = () => {
         containerClassName="z-100 mb-20"
         position="bottom-center"
         toastOptions={{
-          duration: 200000, 
+          duration: 200000,
         }}
       />
 
@@ -113,6 +106,7 @@ const ContactForm: React.FC = () => {
       ) : (
         <Formik
           initialValues={{
+            email: "",
             phone: "",
             message: "",
           }}
@@ -124,6 +118,17 @@ const ContactForm: React.FC = () => {
               <h3 className="mb-8">{t("contactForm.getFeedback")}</h3>
 
               <div className="flex flex-col">
+                <label htmlFor="email">{t("contactForm.emailLabel")}</label>
+                <Field
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder={t("contactForm.emailPlaceholder")}
+                />
+                <ErrorMessage name="email" component="div" className="error-message" />
+              </div>
+
+              <div className="flex flex-col">
                 <label htmlFor="phone">{t("contactForm.phoneLabel")}</label>
                 <Field
                   type="text"
@@ -131,11 +136,7 @@ const ContactForm: React.FC = () => {
                   name="phone"
                   placeholder={t("contactForm.phonePlaceholder")}
                 />
-                <ErrorMessage
-                  name="phone"
-                  component="div"
-                  className="error-message"
-                />
+                <ErrorMessage name="phone" component="div" className="error-message" />
               </div>
               <div className="flex flex-col">
                 <label htmlFor="message">{t("contactForm.messageLabel")}</label>
@@ -146,11 +147,7 @@ const ContactForm: React.FC = () => {
                   rows={4}
                   placeholder={t("contactForm.messagePlaceholder")}
                 />
-                <ErrorMessage
-                  name="message"
-                  component="div"
-                  className="error-message"
-                />
+                <ErrorMessage name="message" component="div" className="error-message" />
               </div>
 
               <p className="info mt-2">

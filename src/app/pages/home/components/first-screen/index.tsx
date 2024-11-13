@@ -7,7 +7,7 @@ const FirstScreen: React.FC = () => {
   const { t } = useTranslation();
 
   const handleClick = () => {
-    const contactsSection = document.getElementById("contacts");
+    const contactsSection = document.getElementById("contact-form");
     if (contactsSection) {
       contactsSection.scrollIntoView({ behavior: "smooth" });
     }
