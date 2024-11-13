@@ -15,7 +15,7 @@ const About: React.FC = () => {
           <img src="/assets/img/about/collage.png" width="100%" alt="boxes for moving" />
         </div>
         <div className="col-span-1 flex flex-col justify-center">
-        <ul ref={ref as React.RefObject<HTMLUListElement>} className="list-disc list-outside pl-6 marker-custom">
+        <ul ref={ref as React.RefObject<HTMLUListElement>} className="animated list-disc list-outside pl-6 marker-custom">
             <li className={`animated ${isInView ? "show" : ""}`}>
               <strong>{t("var.companyCaps")}</strong> {t("about.p1")}
             </li>
