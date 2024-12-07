@@ -6,13 +6,12 @@
   },
   "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
   "nav": {
-    "links": {
-      "about": "#about",
-      "services": "#our-services",
-      "tarifs": "#tarifs",
-      "contacts": "#contacts",
-      "start": "#start"
-    }
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "tarifs": "Preise",
+    "ourTeam": "Unser Team",
+    "reviews": "Bewertungen",
+    "contacts": "Kontakte"
   },
   "footer": {
     "altLogo": "Logo des Unternehmens Bohrom",
@@ -100,6 +99,17 @@
     "alt6": "Zuverlässiger Transport",
     "alt7": "Sicherer Transport von Fracht",
     "alt8": "Umzug mit Profis"
+  },
+  "reviews": {
+    "title": "Bewertungen",
+    "p": "Unsere Kunden schreiben:",
+    "openIn": "In öffnen",
+    "text": {
+      "0": "Ich bin absolut zufrieden. Sie kamen pünktlich, alles wurde schnell umgezogen. Professioneller und freundlicher Ansatz.",
+      "1": "Alles lief perfekt, professionell und schnell. Sehr freundlicher Service, Pünktlichkeit und Präzision. Sehr empfehlenswert! 👌",
+      "2": "Schnell, professionell, alles war ausgezeichnet:-)",
+      "3": "Alles verlief reibungslos, freundlicher Service, guter Preis, alles war wie vereinbart. Ich empfehle es und werde mich bei Bedarf erneut an sie wenden."
+    }
   },
   "contactForm": {
     "successTitle": "Gesendet!",

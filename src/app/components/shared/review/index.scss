@@ -1,0 +1,49 @@
+@import '../../../scss/variables.scss';
+
+.review-card {
+    width: 100%;
+    min-height: 220px;
+    padding: 20px;
+    background: #292929;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .review-stars {
+            display: flex;
+            gap: 5px;
+
+            .star {
+                font-size: 20px;
+                color: #FFD700;
+
+                &.filled {
+                    color: #FFD700;
+                }
+            }
+        }
+
+        .review-date {
+            font-size: 14px;
+            color: #9E9E9E;
+        }
+    }
+
+    .review-text {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #CCCCCC;
+        margin-bottom: 10px;
+    }
+
+    .review-author {
+        font-size: 14px;
+        font-style: italic;
+        color: #7F7F7F;
+    }
+}

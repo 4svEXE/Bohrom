@@ -34,11 +34,14 @@ const OurTeam: React.FC = () => {
           <Swiper
             modules={[Navigation, Scrollbar, A11y]}
             spaceBetween={50}
+            observer={true}
+            observeParents={true}
             navigation
             breakpoints={{
               640: { slidesPerView: 1 }, // для мобільних
-              1024: { slidesPerView: 3 }, // для планшетів
-              1440: { slidesPerView: 4 }, // для десктопів
+              1024: { slidesPerView: 2 }, // для планшетів
+              1440: { slidesPerView: 3 }, // для десктопів
+              1640: { slidesPerView: 4 }, // для десктопів
             }}
           >
             {teamMembers.map((member) => (

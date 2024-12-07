@@ -78,7 +78,7 @@
         z-index: 9;
         justify-content: center;
 
-        @media (max-width: $media-tablet) {
+        @media (max-width: $media-laptop) {
             background-color: #1c1b1bde;
         }
 
@@ -120,6 +120,7 @@
 
             ul {
                 flex-direction: row;
+                flex-wrap: wrap;
             }
         }
     }

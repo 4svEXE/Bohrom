@@ -12,6 +12,7 @@ const OurServices = React.lazy(() => import("./components/our-services"));
 const OurTeam = React.lazy(() => import("./components/our-team"));
 const Tariffs = React.lazy(() => import("./components/tariffs"));
 const WhyUs = React.lazy(() => import("./components/why-choose-us"));
+const Reviews = React.lazy(() => import("./components/reviews"));
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -31,6 +32,7 @@ export default function HomePage() {
           <div id="tarifs"><Tariffs/></div>
           <div id="why-us"><WhyUs/></div>
           <div id="our-team"><OurTeam/></div>
+          <div id="reviews"><Reviews/></div>
           <div id="contacts"><Contacts/></div>
         </React.Suspense>
       </div>

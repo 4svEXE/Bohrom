@@ -6,13 +6,12 @@
   },
   "site-title": "Bohrom - Doprava v Libereckém kraji a ČR",
   "nav": {
-    "links": {
-      "about": "#about",
-      "services": "#our-services",
-      "tarifs": "#tarifs",
-      "contacts": "#contacts",
-      "start": "#start"
-    }
+    "aboutUs": "O nás",
+    "services": "Služby",
+    "tarifs": "Ceny",
+    "ourTeam": "Náš tým",
+    "reviews": "Recenze",
+    "contacts": "Kontakty"
   },
   "footer": {
     "altLogo": "Logo společnosti Bohrom",
@@ -29,12 +28,12 @@
     "p": "Bezpečná přeprava nábytku a nákladů po celé ČR",
     "buttonText": "Poptávka",
     "giveNumber": "Zanechte své číslo",
-    "wellCallYou": "A náš specialista se s  vámi spojí a zodpoví všechny Vaše dotazy."
+    "wellCallYou": "A náš specialista se s vámi spojí a zodpoví všechny Vaše dotazy."
   },
   "about": {
     "p1": " — tým profesionálů, kteří Vám pomohou s kompletním průběhem vašeho stěhování rychle, bezpečně a za dostupnou cenu.",
     "p2": "Pracujeme v Libereckém kraji a po celé ČR. Náš vozový park je vybaven moderním vybavením, které nám umožňuje kvalitně přepravovat různé druhy nákladů a zajistit jejich bezpečnost při přepravě.",
-    "p3": "Specializujeme se především na stěhování a vyklízení bytů domů a kanceláří.",
+    "p3": "Specializujeme se především na stěhování a vyklízení bytů, domů a kanceláří.",
     "p4": "Disponujeme moderní technikou a zaručujeme bezpečnou dopravu s pojištěním.",
     "p5": "Jsme Vám k dispozici 24 hodin denně 7 dní v týdnu."
   },
@@ -46,16 +45,16 @@
     "loader2": "2 stěhováci",
     "loader3": "3 stěhováci",
     "kmRate": "Auto na km",
-    "price1": "700 korun/hodina",
-    "price2": "800 korun/hodina",
-    "price3": "950 korun/hodina",
-    "price4": "1200 korun/hodina",
-    "price5": "17 korun/km"
+    "price1": "700 Kč/hodina",
+    "price2": "800 Kč/hodina",
+    "price3": "950 Kč/hodina",
+    "price4": "1200 Kč/hodina",
+    "price5": "17 Kč/km"
   },
   "ourServices": {
     "title1": "Naše",
     "title2": "Služby",
-    "heading_1": "Stěhování a vyklízení bytů, domů a kanceláři",
+    "heading_1": "Stěhování a vyklízení bytů, domů a kanceláří",
     "paragraph_1": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost.",
     "heading_2": "Demontáž nábytku",
     "paragraph_2": "Demontáž a balení nábytku pro pohodlnou přepravu a následnou montáž.",
@@ -100,6 +99,17 @@
     "alt6": "Spolehlivá přeprava pro přepravu",
     "alt7": "Bezpečný pohyb nákladu",
     "alt8": "Stěhování s profesionály"
+  },
+  "reviews": {
+    "title": "Recenze",
+    "p": "Naši klienti píšou:",
+    "openIn": "Otevřít v",
+    "text": {
+      "0": "Sem naprosto spokojená. Přijeli v domluvený čas, vše bylo odstěhováno rychle. Profesionální a milý přístup.",
+      "1": "Vse probehlo perfektne, profesionalne a rychle. Moc mile jednani, dochvilnost a preciznost muzu jen pochvalit a doporucit. 👌",
+      "2": "Rychlé, profesionální, vše na jedničku:-)",
+      "3": "Vše proběhlo v pohodě, příjemné jednání, dobrá cena, vše bylo tak, jak jsme se domluvili. Mohu vřele doporučit a pokud budu potřebovat tyto služby, obrátím se znovu na ně."
+    }
   },
   "contactForm": {
     "successTitle": "Odesláno!",

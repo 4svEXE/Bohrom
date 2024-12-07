@@ -1,0 +1,80 @@
+@import '../../../../scss/variables.scss';
+
+.Reviews {
+    padding: 69px 85px;
+    border-radius: 45px;
+    background: #1C1B1B;
+    border-radius: 45px;
+    margin: 120px 4px;
+
+    color: #FFFFFF;
+
+    @media (max-width: $media-netbook) {
+        padding: 20px 12px;
+    }
+
+    h2 {
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: Nunito Sans;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        color: #7F7F7F;
+
+        @media (max-width: $media-tablet) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+
+            img {
+                width: 350px;
+                height: 453px;
+                border-radius: 40px;
+                background: #EDEDED;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+            border-radius: 8px;
+            filter: invert(1);
+            opacity: .6;
+        }
+
+        .swiper-button-prev:after {
+            background-image: url("/assets/icons/mdi_arrow-left.svg");
+        }
+
+        .swiper-button-next:after {
+            background-image: url("/assets/icons/mdi_arrow-right.svg");
+        }
+    }
+}
+
+.swiper {
+    padding: 0 45px;
+}

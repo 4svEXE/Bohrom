@@ -6,13 +6,12 @@
   },
   "site-title": "Bohrom - Transportation in the Liberec Region and Czech Republic",
   "nav": {
-    "links": {
-      "about": "#about",
-      "services": "#our-services",
-      "tarifs": "#tarifs",
-      "contacts": "#contacts",
-      "start": "#start"
-    }
+    "aboutUs": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "tarifs": "Giá cả",
+    "ourTeam": "Đội ngũ của chúng tôi",
+    "reviews": "Nhận xét",
+    "contacts": "Liên hệ"
   },
   "footer": {
     "altLogo": "Logo công ty Bohrom",
@@ -100,6 +99,17 @@
     "alt6": "Vận chuyển đáng tin cậy",
     "alt7": "Vận chuyển hàng hóa an toàn",
     "alt8": "Chuyển nhà với đội ngũ chuyên nghiệp"
+  },
+  "reviews": {
+    "title": "Nhận xét",
+    "p": "Khách hàng của chúng tôi viết:",
+    "openIn": "Mở trong",
+    "text": {
+      "0": "Tôi hoàn toàn hài lòng. Họ đã đến đúng giờ, mọi thứ đã được chuyển nhanh chóng. Phong cách chuyên nghiệp và thân thiện.",
+      "1": "Mọi thứ diễn ra hoàn hảo, chuyên nghiệp và nhanh chóng. Dịch vụ rất dễ chịu, đúng giờ và chính xác. Rất khuyến khích! 👌",
+      "2": "Nhanh chóng, chuyên nghiệp, mọi thứ đều tuyệt vời:-)",
+      "3": "Mọi thứ diễn ra suôn sẻ, dịch vụ dễ chịu, giá cả hợp lý, mọi thứ đúng như thỏa thuận. Tôi khuyên dùng và nếu cần dịch vụ như vậy, tôi sẽ liên hệ với họ."
+    }
   },
   "contactForm": {
     "successTitle": "Đã gửi!",
