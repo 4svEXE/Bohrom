@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../widgets/lang-switcher";
+// import LanguageSwitcher from "../../widgets/lang-switcher";
 import "./index.scss";
 
 interface SidebarProps {
@@ -173,7 +173,7 @@ const Header: React.FC<SidebarProps> = () => {
               className="md:mt-0 mt-10 block md:hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
             </li>
           </ul>
         </nav>
@@ -296,7 +296,7 @@ const Header: React.FC<SidebarProps> = () => {
 
         <div className="flex items-center gap-12 z-50">
           <li className="md:mt-0 mt-10 md:block hidden">
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </li>
           <ul className="phone">
             <li>

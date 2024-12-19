@@ -2,21 +2,21 @@ import i18next from "i18next";
 
 const localesHelper = { toggleLanguage: () => {} };
 
-const getLanguageFromStorageOrBrowser = () => {
-  const language = window.localStorage.getItem("i18nextLng");
+// const getLanguageFromStorageOrBrowser = () => {
+//   const language = window.localStorage.getItem("i18nextLng");
 
-  if (language) return language;
+//   if (language) return language;
 
-  const browserLanguage = navigator.language.split("-")[0];
+//   const browserLanguage = navigator.language.split("-")[0];
   
-  if (["en", "cz", "uk", "de", "vi", "pl"].includes(browserLanguage)) {
-    return browserLanguage;
-  }
+//   if (["en", "cz", "uk", "de", "vi", "pl"].includes(browserLanguage)) {
+//     return browserLanguage;
+//   }
 
-  return "cz";
-};
+//   return "cz";
+// };
 
-const initialLanguage = getLanguageFromStorageOrBrowser();
+const initialLanguage = "cz"//getLanguageFromStorageOrBrowser();
 
 i18next.changeLanguage(initialLanguage);
 

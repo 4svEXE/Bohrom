@@ -1,6 +1,6 @@
 {
   "homepage": "https://4svEXE.github.io/Bohrom",
-  "name": "maryna-holovan",
+  "name": "stehovani-bohrom",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy:ftp": "node deploy.js"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -18,8 +19,9 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@tanstack/react-query": "^5.51.21",
     "axios": "^1.7.3",
+    "basic-ftp": "^5.0.5",
     "classnames": "^2.5.1",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "i18next": "^23.12.1",
