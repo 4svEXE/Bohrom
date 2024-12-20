@@ -154,16 +154,19 @@ const Header: React.FC<SidebarProps> = () => {
                 {t("nav.tarifs")}
               </a>
             </li>
-            <li>
-              <a className="link" href="#our-team">
-                {t("nav.ourTeam")}
-              </a>
-            </li>
+            
             <li>
               <a className="link" href="#reviews">
                 {t("reviews.title")}
               </a>
             </li>
+
+            <li>
+              <a className="link" href="#our-team">
+                {t("nav.ourTeam")}
+              </a>
+            </li>
+            
             <li>
               <a className="link" href="#contacts">
                 {t("nav.contacts")}

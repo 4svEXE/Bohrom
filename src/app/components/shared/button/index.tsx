@@ -2,10 +2,10 @@ import React from "react";
 import "./index.scss";
 import Loader from "../loader";
 
-
 interface ButtonProps {
   onClick: () => void;
   text: string;
+  icon?: string;
   className?: string;
   disabled?: boolean;
   isLoading?: boolean;
@@ -15,6 +15,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   onClick,
   text,
+  icon,
   className = "",
   disabled = false,
   isLoading = false,
@@ -27,7 +28,21 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled || isLoading}
       type={type}
     >
-      {isLoading ? <Loader /> : text}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          {text}
+
+          {icon && (
+            <span
+              className="btn-icon"
+              dangerouslySetInnerHTML={{ __html: icon }}
+            />
+          )}
+          
+        </>
+      )}
     </button>
   );
 };

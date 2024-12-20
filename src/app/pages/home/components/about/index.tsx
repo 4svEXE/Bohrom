@@ -11,13 +11,14 @@ const About: React.FC = () => {
   return (
     <section>
       <div className="About grid lg:grid-cols-2 gap-20">
-        <div className="col-span-1 flex justify-center w-full">
+        <div className="col-span-1 flex justify-center w-full flex-col gap-10">
+          <h2 className="md:hidden"><span>{t("var.companyCaps")} Stěhování </span></h2>
           <img src="/assets/img/about/collage.png" width="100%" alt="boxes for moving" />
         </div>
         <div className="col-span-1 flex flex-col justify-center">
         <ul ref={ref as React.RefObject<HTMLUListElement>} className="animated list-disc list-outside pl-6 marker-custom">
             <li className={`animated ${isInView ? "show" : ""}`}>
-              <strong>{t("var.companyCaps")}</strong> {t("about.p1")}
+              <strong className="hidden md:inline">{t("var.companyCaps")}</strong> {t("about.p1")}
             </li>
             <li className={`animated ${isInView ? "show delay-1" : ""}`}>
               {t("about.p2")}

@@ -65,7 +65,7 @@
 
             &:nth-child(1){
                 @media (max-width: $media-desktop) {
-                    opacity: 0;
+                    // opacity: 0;
                     overflow: hidden;
                 }
             }

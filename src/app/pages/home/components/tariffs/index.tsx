@@ -7,14 +7,14 @@ const Tariffs: React.FC = () => {
 
   return (
     <section>
-      <div className="Tariffs flex flex-col items-center gap-20">
-        <div className="flex flex-col items-center gap-3">
+      <div className="Tariffs flex flex-col items-center md:gap-20 gap-6">
+        <div className="flex flex-col items-center gap-3 mx-5">
           <h2>{t("tariffs.title")}</h2>
           <p>{t("tariffs.p")}</p>
         </div>
 
         <div className="items-container">
-          <div className="tariff-item">
+          <div className="tariff-item animated show ">
             <img
               src="/assets/img/tariffs/1.svg"
               alt={t("tariffs.price1")}
@@ -24,7 +24,7 @@ const Tariffs: React.FC = () => {
               <strong>{t("tariffs.price1")}</strong>
             </div>
           </div>
-          <div className="tariff-item">
+          <div className="tariff-item animated show delay-1">
             <img
               src="/assets/img/tariffs/2.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader1")}
@@ -36,7 +36,7 @@ const Tariffs: React.FC = () => {
               <strong>{t("tariffs.price2")}</strong>
             </div>
           </div>
-          <div className="tariff-item">
+          <div className="tariff-item animated show delay-2">
             <img
               src="/assets/img/tariffs/3.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader2")}
@@ -48,7 +48,7 @@ const Tariffs: React.FC = () => {
               <strong>{t("tariffs.price3")}</strong>
             </div>
           </div>
-          <div className="tariff-item">
+          <div className="tariff-item animated show delay-3">
             <img
               src="/assets/img/tariffs/4.svg"
               alt={t("tariffs.vehicle") + " " + t("tariffs.loader3")}
@@ -60,7 +60,7 @@ const Tariffs: React.FC = () => {
               <strong>{t("tariffs.price4")}</strong>
             </div>
           </div>
-          <div className="tariff-item">
+          <div className="tariff-item animated show delay-4">
             <img
               src="/assets/img/tariffs/5.svg"
               alt={t("tariffs.kmRate")}

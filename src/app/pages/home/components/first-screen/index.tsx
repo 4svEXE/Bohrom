@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../../../components/shared/button";
 import "./index.scss";
+import { svg } from "../../../../svg";
 
 const FirstScreen: React.FC = () => {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ const FirstScreen: React.FC = () => {
         <Button
           onClick={handleClick}
           text={t("hiro.buttonText")}
+          icon={svg.truck}
           className="mt-8 w-full md:w-auto animated show delay-3"
         />
       </div>

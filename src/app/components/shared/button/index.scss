@@ -15,6 +15,19 @@
     text-align: center;
     color: #FFFFFF;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-weight: 800;
+
+
+    span{
+        width: 26px;
+        height: 26px;
+    }
+
 
     @media (max-width: $media-tablet) {
         height: auto;

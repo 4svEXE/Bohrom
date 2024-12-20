@@ -16,21 +16,55 @@ const Reviews: React.FC = () => {
       rating: 5,
       author: "Renata Kynychová",
       year: 2024,
+      text: "Jsem naprosto spokojená.Přijeli v domluvený čas, vše bylo odstěhováno rychle. Profesionální a milý přístup.",
     },
     {
       rating: 5,
       author: "Petra Nevařilová",
       year: 2024,
+      text: "Vse probehlo perfektne, profesionalne a rychle. Moc mile jednani, dochvilnost a preciznost muzu jen pochvalit a doporucit. 👌",
     },
     {
       rating: 5,
       author: "Bronislav Roubal",
       year: 2024,
+      text: "Rychlé, profesionální, vše na jedničku:-)",
     },
     {
       rating: 5,
       author: "Milena Jiráková",
       year: 2024,
+      text: "Vše proběhlo v pohodě,příjemné jednání,dobrá cena,vše bylo tak,jak jsme se domluvili. Mohu vřele doporučit a pokud budu potřebovat tyto služby,obrátím se znovu na ně.",
+    },
+    {
+      rating: 5,
+      author: "Kveta Vychterova",
+      year: 2024,
+      text: "Velká spokojenosti 👍 profesionální,milý a ochotný přístup. Přijeli v domluvený čas a vše bylo tak,jak jsme se domluvili. 👌",
+    },
+    {
+      rating: 5,
+      author: "Nell Ťoupalová",
+      year: 2024,
+      text: `kvělá a rychlá domluva.
+Samotné stěhování proběhlo rychle a bez problémů, pánové jsou precizní a opatrní .
+Byli v domluvený čas na místě, nábytek který by se mohl poničit zakryli. A cena oproti konkurenci výborná. Určitě bych se na pány znovu obrátila .`,
+    },
+    {
+      rating: 5,
+      author: "Lenka Marie Oeckinghaus",
+      year: 2024,
+      text: `Velmi profesionální a k tomu navíc příjemný přístup personálu.
+Od poptávky, přes osobní návštěvu, cenovou kalkulaci a následnou objednávku, až po samotné uskutečnění vyklizení našeho starého domu, který jsme potřebovali připravit pro následnou rekonstrukci.
+Vše proběhlo dle domluvy.
+Můžeme jen doporučit. 👍🙂👍
+Děkujeme.`,
+    },
+    {
+      rating: 5,
+      author: "Petra",
+      year: 2024,
+      text: "Výborný. Přijeli na čas. Vše pečlivě zabalili. Nic se nerozbilo. Za mě určitě ano.",
     },
   ];
 
@@ -61,7 +95,7 @@ const Reviews: React.FC = () => {
                   <Review
                     rating={review.rating}
                     postedAt={`${review.year}`}
-                    text={t(`reviews.text.${index}`)}
+                    text={`${review.text}`}
                     author={review.author}
                   />
                 </div>
@@ -70,7 +104,7 @@ const Reviews: React.FC = () => {
           </Swiper>
         </div>
         <a className="link" href={reviewsURL} target="_blank">
-          {t('reviews.openIn')} Google ↝
+          {t("reviews.openIn")} Google ↝
         </a>
       </div>
     </section>

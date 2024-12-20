@@ -7,6 +7,7 @@ import { toast, Toaster } from "react-hot-toast";
 import Button from "../../../../../../components/shared/button";
 
 import "./index.scss";
+import { svg } from "../../../../../../svg";
 
 interface FormValues {
   email: string;
@@ -156,6 +157,7 @@ const ContactForm: React.FC = () => {
 
               <Button
                 text={t("contactForm.submitButton")}
+                icon={svg.mail}
                 className="mt-8 w-full flex justify-center"
                 type="submit"
                 disabled={formik.isSubmitting}

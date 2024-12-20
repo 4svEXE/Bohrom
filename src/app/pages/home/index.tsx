@@ -27,13 +27,13 @@ export default function HomePage() {
 
       <div className="container m-auto">
         <React.Suspense fallback={<div>Loading...</div>}>
-          <div id="about"><About/></div>
-          <div id="our-services"><OurServices/></div>
-          <div id="tarifs"><Tariffs/></div>
-          <div id="why-us"><WhyUs/></div>
-          <div id="our-team"><OurTeam/></div>
-          <div id="reviews"><Reviews/></div>
-          <div id="contacts"><Contacts/></div>
+          <div id="about" className="scroll-mt-1 md:scroll-mt-[-80px]"><About/></div>
+          <div id="our-services" className="scroll-mt-10 md:scroll-mt-[-30px]"><OurServices/></div>
+          <div id="tarifs" className="scroll-mt-1 md:scroll-mt-[-80px]"><Tariffs/></div>
+          <div id="why-us" className="scroll-mt-10 md:scroll-mt-24"><WhyUs/></div>
+          <div id="reviews" className="scroll-mt-10 md:scroll-mt-[-80px]"><Reviews/></div>
+          <div id="our-team" className="scroll-mt-4 md:scroll-mt-[-30px]"><OurTeam/></div>
+          <div id="contacts" className="scroll-mt-1 md:scroll-mt-[-80px]"><Contacts/></div>
         </React.Suspense>
       </div>
 

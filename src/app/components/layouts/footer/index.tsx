@@ -17,14 +17,14 @@ const Footer: React.FC<SidebarProps> = () => {
   const { t } = useTranslation();
 
   // Використовуйте тип для `links`
-  const links: Links = t("nav.links", { returnObjects: true }) as Links;
+  const links: Links = t("nav", { returnObjects: true }) as Links;
   const tel = t("var.tel");
   const email = t("var.email");
 
   return (
     <footer className="Footer">
       <div className="container m-auto grid md:grid-cols-4 grid-cols-1 gap-10">
-        <a href={links.start}>
+        <a href={'#start'}>
           <img src="/assets/logo-black.svg" alt={t("footer.altLogo")} />
         </a>
 
@@ -32,16 +32,16 @@ const Footer: React.FC<SidebarProps> = () => {
           <h6>{t("footer.navigation")}</h6>
           <ul className="flex flex-col gap-2">
             <li>
-              <a href={links.about}>{t("footer.aboutUs")}</a>
+              <a href={'#about'}>{t("footer.aboutUs")}</a>
             </li>
             <li>
-              <a href={links.services}>{t("footer.services")}</a>
+              <a href={'#services'}>{t("footer.services")}</a>
             </li>
             <li>
-              <a href={links.tarifs}>{t("footer.tarifs")}</a>
+              <a href={'#tarifs'}>{t("footer.tarifs")}</a>
             </li>
             <li>
-              <a href={links.contacts}>{t("footer.contacts")}</a>
+              <a href={'#contacts'}>{t("footer.contacts")}</a>
             </li>
           </ul>
         </div>
