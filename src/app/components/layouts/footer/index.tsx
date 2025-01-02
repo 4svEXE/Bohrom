@@ -2,22 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
-// Оголошуємо тип для лінків
-interface Links {
-  start: string;
-  about: string;
-  services: string;
-  tarifs: string;
-  contacts: string;
-}
-
 interface SidebarProps {}
 
 const Footer: React.FC<SidebarProps> = () => {
   const { t } = useTranslation();
 
-  // Використовуйте тип для `links`
-  const links: Links = t("nav", { returnObjects: true }) as Links;
   const tel = t("var.tel");
   const email = t("var.email");
 
