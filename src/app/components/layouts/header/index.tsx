@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-// import LanguageSwitcher from "../../widgets/lang-switcher";
 import "./index.scss";
+import ModalLayer from "../modal";
+import SpinnWhell from "../../widgets/spinn-whell";
 
 interface SidebarProps {
   toggleTheme: () => void;
@@ -20,8 +21,7 @@ const Header: React.FC<SidebarProps> = () => {
   return (
     <div className="container header-container">
       <header className={`Header ${activeNav ? "active" : ""}`}>
-
-      <a href="#start" className="md:block hidden">
+        <a href="#start" className="md:block hidden">
           <svg
             className="logo"
             width="176"
@@ -136,8 +136,8 @@ const Header: React.FC<SidebarProps> = () => {
             />
           </svg>
         </a>
-        
-      <nav className={`navigation ${isShowMenu ? "show-menu" : ""}`}>
+
+        <nav className={`navigation ${isShowMenu ? "show-menu" : ""}`}>
           <ul onClick={toggleNav}>
             <li>
               <a className="link" href="#about">
@@ -154,7 +154,7 @@ const Header: React.FC<SidebarProps> = () => {
                 {t("nav.tarifs")}
               </a>
             </li>
-            
+
             <li>
               <a className="link" href="#reviews">
                 {t("reviews.title")}
@@ -166,7 +166,7 @@ const Header: React.FC<SidebarProps> = () => {
                 {t("nav.ourTeam")}
               </a>
             </li>
-            
+
             <li>
               <a className="link" href="#contacts">
                 {t("nav.contacts")}
@@ -306,6 +306,15 @@ const Header: React.FC<SidebarProps> = () => {
               <a type="tel" href={`tel:${t("var.tel")}`}>
                 <img src="/assets/icons/phone-outgoing.svg" alt="call" />
                 {t("var.tel")}
+              </a>
+            </li>
+          </ul>
+          <ul className="phone">
+            <li>
+              <a>
+                <ModalLayer title="Отримай свою новорічну знижку">
+                  <SpinnWhell />
+                </ModalLayer>
               </a>
             </li>
           </ul>
