@@ -146,12 +146,16 @@
         z-index: -1;
     }
 
-    &:before,
-    &:after {
-        animation: pulse 4s infinite; 
-    }
-    &:after {
-        animation-delay: 300ms;
+    &.active {
+
+        &:before,
+        &:after {
+            animation: pulse 4s infinite;
+        }
+
+        &:after {
+            animation-delay: 300ms;
+        }
     }
 }
 
@@ -161,7 +165,8 @@
 
     }
 
-    50%, 100% {
+    50%,
+    100% {
         border-color: transparent;
         filter: blur(2px);
         transform: scale(4);

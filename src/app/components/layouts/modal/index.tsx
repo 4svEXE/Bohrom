@@ -37,7 +37,10 @@ const ModalLayer: React.FC<ModalLayerProps> = ({
     <div id="modal">
       {modalIsOpen && <Fireworks />}
 
-      <button className="open-modal-button" onClick={openModal}>
+      <button
+        className={`open-modal-button ${promoHelper.isSent() ? "" : "active"}`}
+        onClick={openModal}
+      >
         <img src="./assets/icons/spin-whell.svg" alt="Open spin wheel" />
       </button>
 
@@ -55,7 +58,13 @@ const ModalLayer: React.FC<ModalLayerProps> = ({
           </button>
         </div>
         <div className="ModalContent">
-          {children ? children : <p>;)</p>}
+          {children ? children : <p>-</p>}
+          {promoHelper.getPromo() && (
+            <p>
+              Tým bohrom stěhování vám přeje, abyste dosáhli svých cílů! A my
+              vám v tom pomůžeme.
+            </p>
+          )}
         </div>
       </Modal>
     </div>
