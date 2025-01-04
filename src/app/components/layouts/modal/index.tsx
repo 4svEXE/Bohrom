@@ -26,7 +26,9 @@ const ModalLayer: React.FC<ModalLayerProps> = ({ title = "Default Title", childr
 
   return (
     <div id="modal">
-      <button onClick={openModal}>Open Modal</button>
+      <button className="open-modal-button" onClick={openModal}>
+        <img src="./assets/icons/spin-whell.svg" alt="Open spin wheel" />
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

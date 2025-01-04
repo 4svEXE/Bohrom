@@ -309,15 +309,6 @@ const Header: React.FC<SidebarProps> = () => {
               </a>
             </li>
           </ul>
-          <ul className="phone">
-            <li>
-              <a>
-                <ModalLayer title="Отримай свою новорічну знижку">
-                  <SpinnWhell />
-                </ModalLayer>
-              </a>
-            </li>
-          </ul>
         </div>
 
         <div className="burger-container">

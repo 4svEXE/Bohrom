@@ -2,6 +2,8 @@ import React from "react";
 
 import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
+import ModalLayer from "../components/layouts/modal";
+import SpinnWhell from "../components/widgets/spinn-whell";
 
 interface WithLayoutProps {
   children: React.ReactNode;
@@ -16,6 +18,10 @@ export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
       <div className="flex flex-col w-full" id="start">
         {children}
       </div>
+
+      <ModalLayer title="Отримай свою новорічну знижку">
+        <SpinnWhell />
+      </ModalLayer>
 
       <Footer />
     </div>
