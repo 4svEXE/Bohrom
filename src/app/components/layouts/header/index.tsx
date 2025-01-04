@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
-import ModalLayer from "../modal";
-import SpinnWhell from "../../widgets/spinn-whell";
 
 interface SidebarProps {
   toggleTheme: () => void;

@@ -4,10 +4,11 @@ import { Formik, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { toast, Toaster } from "react-hot-toast";
-import Button from "../../../../../../components/shared/button";
+import Button from "../../shared/button";
 
 import "./index.scss";
-import { svg } from "../../../../../../svg";
+import { svg } from "../../../svg";
+import promoHelper from "../../../helpers/promoHelper";
 
 interface FormValues {
   email: string;
@@ -15,7 +16,11 @@ interface FormValues {
   message: string;
 }
 
-const ContactForm: React.FC = () => {
+interface FormProps {
+  formClasses?: string
+}
+
+const ContactForm: React.FC<FormProps> = ({formClasses = ""}) => {
   const { t } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -72,13 +77,14 @@ const ContactForm: React.FC = () => {
           to_name: "BOHROM",
           email: values.email,
           phone: values.phone,
-          message: values.message,
+          message: values.message + '\n\n' + "Знижка: " + promoHelper.getPromo() || "-",
         },
         USER_ID
       );
       updateEmailLimit();
       actions.resetForm();
       setIsSubmitted(true);
+      promoHelper.setIsSent()
       toast.success(t("contactForm.successMessage"));
     } catch (error) {
       toast.error(t("contactForm.errorMessage"));
@@ -115,7 +121,7 @@ const ContactForm: React.FC = () => {
           onSubmit={onSubmit}
         >
           {(formik) => (
-            <form className="contact-form gap-10" onSubmit={formik.handleSubmit}>
+            <form className={"contact-form gap-10 " + formClasses} onSubmit={formik.handleSubmit}>
               <h3 className="mb-8">{t("contactForm.getFeedback")}</h3>
 
               <div className="flex flex-col">

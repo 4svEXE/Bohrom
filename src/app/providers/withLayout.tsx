@@ -11,6 +11,7 @@ interface WithLayoutProps {
 }
 
 export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
+  
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-[100vh] overflow-hidden">
       <Header toggleTheme={toggleTheme} />
@@ -19,7 +20,8 @@ export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
         {children}
       </div>
 
-      <ModalLayer title="Отримай свою новорічну знижку">
+      {/* <ModalLayer title="Отримай свою новорічну знижку"> */}
+      <ModalLayer title="Šťastný rok 2025!">
         <SpinnWhell />
       </ModalLayer>
 

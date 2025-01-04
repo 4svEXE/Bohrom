@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Modal from "react-modal";
 import "./index.scss";
+import Fireworks from "../fireworks";
+import promoHelper from "../../../helpers/promoHelper";
 
 Modal.setAppElement("#root");
 
@@ -9,26 +11,36 @@ interface ModalLayerProps {
   children?: React.ReactNode; // Пропс для вкладеного контенту
 }
 
-const ModalLayer: React.FC<ModalLayerProps> = ({ title = "Default Title", children }) => {
+const ModalLayer: React.FC<ModalLayerProps> = ({
+  title = "Default Title",
+  children,
+}) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
 
-  useEffect(() => {
-    openModal();
-  }, []);
-
   function closeModal() {
     setIsOpen(false);
   }
 
+  useEffect(() => {
+    openModal();
+
+    if (promoHelper.getPromo()) {
+      closeModal();
+    }
+  }, []);
+
   return (
     <div id="modal">
+      {modalIsOpen && <Fireworks />}
+
       <button className="open-modal-button" onClick={openModal}>
         <img src="./assets/icons/spin-whell.svg" alt="Open spin wheel" />
       </button>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -43,7 +55,7 @@ const ModalLayer: React.FC<ModalLayerProps> = ({ title = "Default Title", childr
           </button>
         </div>
         <div className="ModalContent">
-          {children ? children : <p>I am a modal</p>}
+          {children ? children : <p>;)</p>}
         </div>
       </Modal>
     </div>

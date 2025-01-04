@@ -7,15 +7,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow-y: scroll;
+    padding: 60px 0;
 }
 
 /* Модальне вікно */
 .Modal {
+    margin-top: 60px;
     position: relative;
     background-color: #fff;
     border-radius: 12px;
@@ -25,6 +28,7 @@
     max-width: 90%;
     z-index: 1100;
     animation: fadeIn 0.3s ease;
+    // min-height: 100dvh;
 }
 
 /* Заголовок модального вікна */
@@ -35,13 +39,15 @@
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    z-index: 9999999;
+    background-color: #fff;
 }
 
 /* Кнопка закриття */
 .CloseButton {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 30px;
     color: #666;
     cursor: pointer;
     transition: color 0.3s;

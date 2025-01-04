@@ -1,4 +1,4 @@
-import ContactForm from "./components/contact-form";
+import ContactForm from "../../../../components/widgets/contact-form";
 import "./index.scss";
 import { useTranslation } from "react-i18next"; // Імпорт функції локалізації
 

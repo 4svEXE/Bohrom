@@ -8,13 +8,22 @@
         text-align: left;
         color: #fff;
 
+
+
         a {
             color: #2A91C1;
         }
     }
+
+    &.dark {
+        .info, label, h3 {
+            color: #1e1e1e;
+        }
+    }
+
 }
 
-.success-message{
+.success-message {
     width: 100%;
     display: flex;
     align-items: center;
