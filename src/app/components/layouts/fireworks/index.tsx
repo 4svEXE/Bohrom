@@ -46,11 +46,11 @@ const Fireworks: React.FC = () => {
     };
 
     class Salve {
-      x: number;
-      y: number;
-      mx: number;
-      ym: number;
-      c: (fac?: number) => string;
+      x: number = 0;
+      y: number = 0;
+      mx: number = 0;
+      ym: number = 0;
+      c!: (fac?: number) => string;
       cb: ((salve: Salve) => void) | null = null;
       explosion: { r: number; s: number; d: number; y: number }[] = [];
     }
@@ -166,8 +166,8 @@ const Fireworks: React.FC = () => {
     class FireworksEngine {
       canvas: HTMLCanvasElement;
       engine: CanvasRenderingContext2D;
-      width: number;
-      height: number;
+      width: number = 0;
+      height: number = 0;
       stacks: Map<number, Battery>;
 
       constructor() {

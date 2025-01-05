@@ -25,7 +25,7 @@ const SpinnWheel: React.FC = () => {
   // Обробник кліку на кнопку SPIN
   const handleSpinClick = () => {
     if (!mustSpin) {
-      const newPrizeNumber = Math.floor(Math.random() * data.length);
+      const newPrizeNumber = Math.floor(Math.random() * (data.length -1));
       setPrizeNumber(newPrizeNumber);
       setMustSpin(true);
     }
@@ -49,7 +49,7 @@ const SpinnWheel: React.FC = () => {
 
   return !promoHelper.getPromo() ? (
     <div>
-      <p>Na počest nového roku pro vás máme slevy až 25 %! </p>
+      <p>Na počest nového roku pro vás máme slevy až 25 %! <b>Akce trvá do konce ledna.</b> </p>
       {/* Рулетка */}
       <Wheel
         mustStartSpinning={mustSpin}
@@ -70,7 +70,7 @@ const SpinnWheel: React.FC = () => {
       />
 
       <Button
-        text="kroutit"
+        text="Točit"
         className="mt-8 w-full flex justify-center"
         type="submit"
         disabled={mustSpin}

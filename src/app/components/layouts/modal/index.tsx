@@ -61,7 +61,7 @@ const ModalLayer: React.FC<ModalLayerProps> = ({
           {children ? children : <p>-</p>}
           {promoHelper.getPromo() && (
             <p>
-              Tým bohrom stěhování vám přeje, abyste dosáhli svých cílů! A my
+              Tým BOHROM STĚHOVÁNÍ vám přeje, abyste dosáhli svých cílů! A my
               vám v tom pomůžeme.
             </p>
           )}

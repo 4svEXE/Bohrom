@@ -21,7 +21,7 @@ export default function WithLayout({ children, toggleTheme }: WithLayoutProps) {
       </div>
 
       {/* <ModalLayer title="Отримай свою новорічну знижку"> */}
-      <ModalLayer title="Šťastný rok 2025!">
+      <ModalLayer title="Šťastný nový rok!">
         <SpinnWhell />
       </ModalLayer>
 

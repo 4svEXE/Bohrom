@@ -51,7 +51,7 @@ const MsgModal: React.FC<ModalLayerProps> = ({
             {!promoHelper.isSent() && (
               <div className="">
                 <p>
-                  Chcete-li jej použít, vyplňte formulář. Do hodiny vás budeme
+                  Pokud chcete vyplnit formulář. Do hodiny vás budeme
                   kontaktovat.
                 </p>
                 <hr className="mb-4" />
