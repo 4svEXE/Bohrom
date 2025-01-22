@@ -6,37 +6,38 @@ import promoHelper from "../../../helpers/promoHelper";
 
 import "./index.scss";
 
-const data = [
-  { option: "5%", style: { backgroundColor: "white" } },
-  { option: "10%" },
-  { option: "5%", style: { backgroundColor: "white" } },
-  { option: "10%" },
-  { option: "5%", style: { backgroundColor: "white" } },
-  { option: "10%" },
-  { option: "5%", style: { backgroundColor: "white" } },
-  { option: "25%", style: { backgroundColor: "red", textColor: "white" } },
-];
-
 const SpinnWheel: React.FC = () => {
   const [mustSpin, setMustSpin] = useState(false);
   const [isOpenResultModal, setIsOpenResultModal] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
 
-  // Обробник кліку на кнопку SPIN
+  const data = [
+    { option: "5%", style: { backgroundColor: "white" }, weight: 198 }, // Основний варіант
+    { option: "10%", weight: 1 }, // Дуже рідко
+    { option: "5%", style: { backgroundColor: "white" }, weight: 198 },
+    { option: "10%", weight: 1 },
+    { option: "5%", style: { backgroundColor: "white" }, weight: 198 },
+    { option: "10%", weight: 1 },
+    { option: "5%", style: { backgroundColor: "white" }, weight: 198 },
+    { option: "25%", style: { backgroundColor: "red", textColor: "white" }, weight: 0 }, // Не випадає
+  ];
+
   const handleSpinClick = () => {
     if (!mustSpin) {
-      const newPrizeNumber = Math.floor(Math.random() * (data.length -1));
-      setPrizeNumber(newPrizeNumber);
+      const weightedData = data.flatMap((item, index) =>
+        Array(item.weight).fill(index)
+      ); // Створення масиву з індексів на основі ваг
+      const randomIndex =
+        weightedData[Math.floor(Math.random() * weightedData.length)];
+      setPrizeNumber(randomIndex);
       setMustSpin(true);
     }
   };
 
-  // Відкриття модального вікна
   const openResultModal = () => {
     setIsOpenResultModal(true);
   };
 
-  // Закриття модального вікна
   const closeResultModal = () => {
     setIsOpenResultModal(false);
   };
@@ -50,19 +51,17 @@ const SpinnWheel: React.FC = () => {
   return !promoHelper.getPromo() ? (
     <div>
       <p>Na počest nového roku pro vás máme slevy až 25 %! <b>Akce trvá do konce ledna.</b> </p>
-      {/* Рулетка */}
       <Wheel
         mustStartSpinning={mustSpin}
         prizeNumber={prizeNumber}
         data={data}
         onStopSpinning={() => {
           setMustSpin(false);
-          promoHelper.setPromo(data[prizeNumber].option); // Зберігаємо вибраний приз
-          openResultModal(); // Відкриваємо модальне вікно
+          promoHelper.setPromo(data[prizeNumber].option);
+          openResultModal();
         }}
       />
 
-      {/* Модальне вікно з результатом */}
       <MsgModal
         isOpen={isOpenResultModal}
         onClose={closeResultModal}
@@ -82,8 +81,6 @@ const SpinnWheel: React.FC = () => {
       <p>Zatočit můžete pouze jednou, poté už nelze výsledek změnit. Hodně štěstí!</p>
     </div>
   ) : (
-    // Якщо промокод уже отриманий, просто показуємо повідомлення
-    
     <MsgModal
       isOpen={isOpenResultModal}
       onClose={closeResultModal}
@@ -93,3 +90,4 @@ const SpinnWheel: React.FC = () => {
 };
 
 export default SpinnWheel;
+
