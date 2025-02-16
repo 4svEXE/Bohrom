@@ -75,6 +75,13 @@
             }
         }
 
+        .swiper-button-prev,
+        .swiper-button-next{
+            @media (max-width: $media-tablet) {
+                top: 90%;
+            }
+        }
+
         .swiper-button-prev:after {
             background-image: url("/assets/icons/mdi_arrow-left.svg");
         }

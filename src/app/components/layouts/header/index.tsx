@@ -152,7 +152,11 @@ const Header: React.FC<SidebarProps> = () => {
                 {t("nav.tarifs")}
               </a>
             </li>
-
+            <li>
+              <a className="link" href="#additional-services">
+              Doplňkové služby
+              </a>
+            </li>
             <li>
               <a className="link" href="#reviews">
                 {t("reviews.title")}

@@ -14,6 +14,18 @@ const Reviews: React.FC = () => {
   const reviews = [
     {
       rating: 5,
+      author: "Vít Dlouhý",
+      year: 2025,
+      text: "Skvělá zkušenost, rozhodně doporučuji i ostatním. Od prvního kontaktu až po samotné stěhování, vše naprosto bez problémů. Velmi ochotné jednání a velmi dobrá cena! Děkujeme :-)",
+    },
+    {
+      rating: 5,
+      author: "Lea Ťoupalová",
+      year: 2025,
+      text: "Maximální spokojenost! Celý proces stěhování bytu byl úplně bez problémů. Blesková reakce na poptávku, firma přijela včas. Velmi rychlá a profesionální práce s lidským přístupem a za skvělou cenu!! Doporučuji!!",
+    },
+    {
+      rating: 5,
       author: "Renata Kynychová",
       year: 2024,
       text: "Jsem naprosto spokojená.Přijeli v domluvený čas, vše bylo odstěhováno rychle. Profesionální a milý přístup.",

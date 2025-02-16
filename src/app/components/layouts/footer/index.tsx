@@ -13,7 +13,7 @@ const Footer: React.FC<SidebarProps> = () => {
   return (
     <footer className="Footer">
       <div className="container m-auto grid md:grid-cols-4 grid-cols-1 gap-10">
-        <a href={'#start'}>
+        <a href={"#start"}>
           <img src="/assets/logo-black.svg" alt={t("footer.altLogo")} />
         </a>
 
@@ -21,16 +21,21 @@ const Footer: React.FC<SidebarProps> = () => {
           <h6>{t("footer.navigation")}</h6>
           <ul className="flex flex-col gap-2">
             <li>
-              <a href={'#about'}>{t("footer.aboutUs")}</a>
+              <a href={"#about"}>{t("footer.aboutUs")}</a>
             </li>
             <li>
-              <a href={'#services'}>{t("footer.services")}</a>
+              <a href={"#our-services"}>{t("footer.services")}</a>
             </li>
             <li>
-              <a href={'#tarifs'}>{t("footer.tarifs")}</a>
+              <a className="link" href="#additional-services">
+                Doplňkové služby
+              </a>
             </li>
             <li>
-              <a href={'#contacts'}>{t("footer.contacts")}</a>
+              <a href={"#tarifs"}>{t("footer.tarifs")}</a>
+            </li>
+            <li>
+              <a href={"#contacts"}>{t("footer.contacts")}</a>
             </li>
           </ul>
         </div>
