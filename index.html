@@ -18,6 +18,7 @@
     />
     <meta name="referrer" content="no-referrer" />
     <title>Stěhování Bohrom - Vaše levné stěhování LIBEREC</title>
+    <link rel="canonical" href="http://stehovani-bohrom.cz" />
 
     <meta
       property="og:title"
@@ -632,5 +633,55 @@ c142 -82 108 -283 -54 -329 -79 -22 -109 -20 -168 9 -68 34 -104 90 -104 165
 
       gtag("config", "AW-16783455455");
     </script>
+
+     <!-- GA GOAL script -->
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.body.addEventListener("click", function (event) {
+              const link = event.target.closest("a"); // Шукаємо найближчий <a>
+              
+              if (!link) return; // Якщо не <a>, виходимо
+      
+              const telPattern = /^tel:\+?\d+/; // Перевіряємо телефонні номери
+              
+              if (telPattern.test(link.href)) {
+                  event.preventDefault(); // Блокуємо перехід
+      
+      
+                  // Відправляємо подію в GA, але **тільки 1 раз за клік**
+                  link.dataset.clicked = "true"; // Позначаємо, що вже натиснуто
+
+                  gtag('event', 'conversion', {
+                      'send_to': 'AW-16783455455/Cx1fCNC9qaAaEN_p_MI-',
+                  });
+      
+                  setTimeout(() => {
+                      link.removeAttribute("data-clicked"); // Даємо можливість повторного кліку
+                      window.location.href = link.href;
+                  }, 100);
+              }
+          }, { capture: true, once: false }); // `capture: true` ловить клік раніше за вкладені елементи
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.body.addEventListener("click", function (event) {
+              // Відстежуємо кліки по кнопці відправки форми
+              const button = event.target.closest('button[type="submit"]');
+              
+              if (button) {
+                  console.log("🚀 Клік по кнопці форми:", button.innerText);
+      
+                  gtag('event', 'conversion', {
+                    'send_to': 'AW-16783455455/rBxUCI6FhOwZEN_p_MI-',
+                    'value': 1.0,
+                    'currency': 'CZK'
+                  });
+              }
+          }, { capture: true });
+      });
+      </script>
+  
   </body>
 </html>
