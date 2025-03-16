@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "deploy:ftp": "node deploy.js",
-    "save": "npm run build && npm run deploy:ftp"
+    "update:ftp": "npm run build && npm run deploy:ftp"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",

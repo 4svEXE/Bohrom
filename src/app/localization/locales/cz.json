@@ -54,18 +54,18 @@
   "ourServices": {
     "title1": "Naše",
     "title2": "Služby",
-    "heading_1": "Stěhování a vyklízení bytů, domů a kanceláří",
-    "paragraph_1": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost.",
+    "heading_1": "Stěhování a vyklízení bytů",
+    "paragraph_1": "Plánujete stěhování nebo potřebujete vyklidit byt? Jsme tu pro vás! Nabízíme kompletní služby v oblasti stěhování a vyklízení bytových i nebytových prostor. Postaráme se o vše – od pečlivého balení vašich věcí až po jejich bezpečný transport na nové místo.",
     "heading_2": "Demontáž nábytku",
-    "paragraph_2": "Demontáž a balení nábytku pro pohodlnou přepravu a následnou montáž.",
-    "heading_3": "Nákladní doprava",
-    "paragraph_3": "Efektivní přeprava různých druhů nákladu, včetně těžkých a neskladných předmětů.",
-    "heading_4": "Vyklízení nepotřebného nábytku a stavebního odpadu",
-    "paragraph_4": "Organizace odvozu starého nábytku a recyklace stavebního odpadu.",
-    "heading_5": "Přeprava nábytku a zboží z obchodů",
-    "paragraph_5": "Rychlé a spolehlivé dodání nového nábytku a zboží z prodejen na místo určení.",
+    "paragraph_2": "Potřebujete rozebrat nábytek před stěhováním, rekonstrukcí nebo likvidací? Nabízíme odbornou demontáž skříní, postelí, kuchyňských linek, kancelářského vybavení i dalších kusů nábytku.",
+    "heading_5": "Nákladní doprava",
+    "paragraph_5": "Nabízíme flexibilní a cenově dostupné dopravní služby pro firmy i jednotlivce. Ať už potřebujete přepravit stavební materiál, nábytek, palety nebo jiné náklady, jsme připraveni pomoci.",
+    "heading_3": "Vyklízení nepotřebného nábytku a stavebního odpadu",
+    "paragraph_3": "Chcete se zbavit starého nábytku, spotřebičů nebo stavebního odpadu? Postaráme se o kompletní vyklízení bytů, domů, kanceláří i firemních prostor. Nepotřebné věci bezpečně odvezeme a ekologicky zlikvidujeme, abyste se nemuseli o nic starat.",
+    "heading_4": "Přeprava nábytku a zboží z obchodu",
+    "paragraph_4": "Při koupi nového nábytku nebo zboží se často setkáváme s otázkou, jak bezpečně a efektivně dostat naše nové vybavení domů. Naše služby přepravy nábytku a zboží z obchodu vám usnadní celý proces, ať už jde o malý nákup nebo rozměrné kousky nábytku.",
     "heading_6": "Doprava stavebních materiálů",
-    "paragraph_6": "Doprava stavebních materiálů pro vaši rekonstrukci nebo stavbu."
+    "paragraph_6": "Naše služby jsou flexibilní, rychlé a cenově dostupné. Zajistíme včasné dodání a bezpečný transport, aby vaše práce probíhaly bez zdržení."
   },
   "whyUs": {
     "titlePart1": "Proč",
@@ -75,17 +75,17 @@
     "alt3": "Skvělý zákaznický servis",
 
     "reason1": {
-      "title": "Stěhování bytů domů a kanceláři",
-      "description": "Profesionální stěhování vašeho domova nebo kanceláře s důrazem na detail a bezpečnost."
+      "title": "Stĕhování bytů domů a kanceláři",
+      "description": "Nabízíme profesionální služby s důrazem na bezpečnost, efektivitu a pečlivost. Náš zkušený tým se postará o demontáž, přepravu i montáž nábytku, a to s maximální ohleduplností k vašemu majetku. Pracujeme rychle, spolehlivě a vždy se snažíme přizpůsobit vašim potřebám."
     },
     "reason2": {
       "title": "Konkurenční ceny",
-      "description": "Dostupné ceny a kvalitní služby."
+      "description": "Věříme, že skvělé služby by měly být dostupné pro každého. Proto nabízíme férové a konkurenceschopné ceny, aniž bychom snižovali kvalitu."
     },
 
     "reason3": {
       "title": "Skvělý zákaznický servis",
-      "description": "Náš tým je vždy připraven vám kdykoli pomoci a vyřešit jakékoli dotazy nebo problémy."
+      "description": "Stěhování může být stresující, ale s námi to zvládnete bez starostí! Zakládáme si na profesionálním a přátelském přístupu ke každému zákazníkovi. Jsme vždy připraveni poradit, naplánovat stěhování podle vašich potřeb a přizpůsobit se vašemu harmonogramu. Naše zkušené týmy pracují rychle, efektivně a s maximální péčí o vaše věci."
     }
   },
   "ourTeam": {

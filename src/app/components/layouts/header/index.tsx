@@ -148,6 +148,11 @@ const Header: React.FC<SidebarProps> = () => {
               </a>
             </li>
             <li>
+              <a className="link" href="#contacts">
+                {t("nav.contacts")}
+              </a>
+            </li>
+            <li>
               <a className="link" href="#tarifs">
                 {t("nav.tarifs")}
               </a>
@@ -169,11 +174,7 @@ const Header: React.FC<SidebarProps> = () => {
               </a>
             </li>
 
-            <li>
-              <a className="link" href="#contacts">
-                {t("nav.contacts")}
-              </a>
-            </li>
+            
             <li
               className="md:mt-0 mt-10 block md:hidden"
               onClick={(e) => e.stopPropagation()}
